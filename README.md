@@ -2,7 +2,7 @@
   <img src="Docs/assets/Banner_Visiona.jpg" alt="Banner" width="900">
 </p>
 
-<h1 align="center">Nome do Projeto</h1>
+<h1 align="center">⌞  🖧 Nome do Projeto 🖧 ⌝</h1>
 
 <p align="center">
   Projeto desenvolvido em parceria com a <strong>Visiona Tecnologia Espacial</strong>, voltado à governança,
@@ -16,7 +16,8 @@
 
 ---
 
-## 📑 Sumário
+<h2 align="center">══════════════ Sumário ══════════════</h2>
+
 
 - [Sobre a Visiona](#-sobre-a-visiona)
 - [Desafio Proposto](#-desafio-proposto)
@@ -33,7 +34,7 @@
 
 ---
 
-## 🛰️ Sobre a Visiona
+<h2 align="center">══════════════ Sobre a Visiona ══════════════</h2>
 
 A **Visiona** atua em projetos que utilizam informações territoriais, ambientais e geoespaciais para apoiar
 processos de análise, planejamento e tomada de decisão, atendendo instituições públicas, empresas privadas,
@@ -41,7 +42,7 @@ pesquisadores e analistas.
 
 ---
 
-## 🎯 Desafio Proposto
+<h2 align="center">══════════════ Desafio Proposto ══════════════</h2>
 
 ### Governança e Rastreabilidade de Dados Geoespaciais de Imóveis Rurais
 
@@ -50,7 +51,7 @@ públicas ou privadas, contendo registros cadastrais, informações geográficas
 longo do tempo. Esses dados são amplamente utilizados para avaliação de aspectos ambientais, acompanhamento
 territorial e geração de indicadores estratégicos.
 
-## 📌 Situação Atual
+<h2 align="center">══════════════ Situação Atual ══════════════</h2>
 
 Os dados utilizados pela organização possuem características variadas:
 
@@ -72,7 +73,7 @@ de utilização. Quando um indicador é produzido, nem sempre é simples identif
 Essa situação gera desafios relacionados à **transparência, confiabilidade e auditabilidade** dos resultados
 produzidos.
 
-## ❗ O Problema
+<h2 align="center">══════════════ O Problema ══════════════</h2>
 
 A organização necessita melhorar a **governança das informações** utilizadas em seus processos analíticos.
 
@@ -84,7 +85,7 @@ Além disso, a empresa deseja aumentar a confiança sobre a qualidade das inform
 indicadores, reduzindo o impacto de inconsistências, duplicidades e divergências existentes nas bases
 recebidas.
 
-## 🎯 Objetivo
+<h2 align="center">══════════════ Objetivo ══════════════</h2>
 
 Desenvolver uma solução que permita:
 
@@ -98,15 +99,17 @@ Desenvolver uma solução que permita:
 
 ---
 
-## 📋 Backlog do Produto
+<h2 align="center">══════════════ Backlog do Produto ══════════════</h2>
 
-<p>
+<p align="center">
   <a href="#">
     <img src="https://img.shields.io/badge/📄_BACKLOG_DE_PRODUTO-2D2D2D?style=for-the-badge&logoColor=white" alt="Backlog de Produto" />
   </a>
 </p>
 
-## 🗓️ Cronograma das Sprints
+<h2 align="center">══════════════ Cronograma das Sprints ══════════════</h2>
+
+<div align="center">
 
 | Sprint | Período | Link documentação | Vídeo/Demo |
 | :---: | :---: | :---: | :---: |
@@ -115,47 +118,56 @@ Desenvolver uma solução que permita:
 | Sprint 3 | dd/mm - dd/mm | [Docs Sprint 3](#) | [Demo](#) |
 | Entrega Final | dd/mm/aaaa | — | — |
 
----
-
-## 🛠️ Tecnologias Utilizadas
-
-### Backend
-
-<p>
-  <img src="https://img.shields.io/badge/Java-FE5000?style=for-the-badge&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/Spring_Boot-FE5000?style=for-the-badge&logo=springboot&logoColor=white" />
-  <img src="https://img.shields.io/badge/Maven-FE5000?style=for-the-badge&logo=apachemaven&logoColor=white" />
-</p>
-
-### Banco de Dados
-
-<p>
-  <img src="https://img.shields.io/badge/PostgreSQL-FFA300?style=for-the-badge&logo=postgresql&logoColor=2D2D2D" />
-  <img src="https://img.shields.io/badge/PostGIS-FFA300?style=for-the-badge&logo=postgresql&logoColor=2D2D2D" />
-</p>
-
-### Frontend
-
-<p>
-  <img src="https://img.shields.io/badge/HTML5-2D2D2D?style=for-the-badge&logo=html5&logoColor=FFA300" />
-  <img src="https://img.shields.io/badge/CSS3-2D2D2D?style=for-the-badge&logo=css3&logoColor=FFA300" />
-  <img src="https://img.shields.io/badge/JavaScript-2D2D2D?style=for-the-badge&logo=javascript&logoColor=FFA300" />
-</p>
-
-### Ferramentas e Gestão
-
-<p>
-  <img src="https://img.shields.io/badge/GitHub-808080?style=for-the-badge&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub_Projects-808080?style=for-the-badge&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/Figma-808080?style=for-the-badge&logo=figma&logoColor=white" />
-  <img src="https://img.shields.io/badge/Discord-808080?style=for-the-badge&logo=discord&logoColor=white" />
-</p>
-
-> *Ajustar os badges conforme as tecnologias efetivamente escolhidas pela equipe.*
+</div>
 
 ---
 
-## ⚙️ Como Executar o Projeto
+<h2 align="center">══════════════ Tecnologias Usadas ══════════════</h2>
+
+<div align="center">
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img width="60" height="3" src="https://placehold.co/60x3/FE5000/FE5000.png"/>
+      <br><strong>⚙️ BACKEND</strong><br><br>
+      <img src="https://img.shields.io/badge/Java-FE5000?style=for-the-badge&logo=openjdk&logoColor=white" /><br>
+      <img src="https://img.shields.io/badge/Spring_Boot-FE5000?style=for-the-badge&logo=springboot&logoColor=white" /><br>
+      <img src="https://img.shields.io/badge/Maven-FE5000?style=for-the-badge&logo=apachemaven&logoColor=white" />
+    </td>
+    <td align="center" width="50%">
+      <img width="60" height="3" src="https://placehold.co/60x3/FFA300/FFA300.png"/>
+      <br><strong>🗄️ BANCO DE DADOS</strong><br><br>
+      <img src="https://img.shields.io/badge/PostgreSQL-FFA300?style=for-the-badge&logo=postgresql&logoColor=2D2D2D" /><br>
+      <img src="https://img.shields.io/badge/PostGIS-FFA300?style=for-the-badge&logo=postgresql&logoColor=2D2D2D" />
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="50%">
+      <img width="60" height="3" src="https://placehold.co/60x3/2D2D2D/2D2D2D.png"/>
+      <br><strong>🎨 FRONTEND</strong><br><br>
+      <img src="https://img.shields.io/badge/HTML5-2D2D2D?style=for-the-badge&logo=html5&logoColor=FFA300" /><br>
+      <img src="https://img.shields.io/badge/CSS3-2D2D2D?style=for-the-badge&logo=css3&logoColor=FFA300" /><br>
+      <img src="https://img.shields.io/badge/JavaScript-2D2D2D?style=for-the-badge&logo=javascript&logoColor=FFA300" />
+    </td>
+    <td align="center" width="50%">
+      <img width="60" height="3" src="https://placehold.co/60x3/808080/808080.png"/>
+      <br><strong>🛠️ FERRAMENTAS & GESTÃO</strong><br><br>
+      <img src="https://img.shields.io/badge/GitHub-808080?style=for-the-badge&logo=github&logoColor=white" /><br>
+      <img src="https://img.shields.io/badge/GitHub_Projects-808080?style=for-the-badge&logo=github&logoColor=white" /><br>
+      <img src="https://img.shields.io/badge/Figma-808080?style=for-the-badge&logo=figma&logoColor=white" /><br>
+      <img src="https://img.shields.io/badge/Discord-808080?style=for-the-badge&logo=discord&logoColor=white" />
+    </td>
+  </tr>
+</table>
+
+</div>
+
+<p align="center"><sub><em>Ajustar os badges conforme as tecnologias efetivamente escolhidas pela equipe.</em></sub></p>
+
+---
+
+<h2 align="center">══════════════ Como Executar o Projeto ══════════════</h2>
 
 ```bash
 # Clonar o repositório
@@ -179,7 +191,9 @@ cp .env.example .env
 
 ---
 
-## 📚 Documentação
+<h2 align="center">══════════════ Documentação ══════════════</h2>
+
+<div align="center">
 
 | Documento | Link |
 | --- | :---: |
@@ -192,9 +206,13 @@ cp .env.example .env
 | Manual do Usuário | [Acessar](#) |
 | Critérios de Aceitação | [Acessar](#) |
 
+</div>
+
 ---
 
-## 🎨 Paleta de Cores do Projeto
+<h2 align="center">══════════════ Paleta de Cores do Projeto ══════════════</h2>
+
+<div align="center">
 
 | Cor | Código | Exemplos de uso |
 | :---: | :---: | --- |
@@ -203,9 +221,13 @@ cp .env.example .env
 | ![#2D2D2D](https://placehold.co/40x20/2D2D2D/2D2D2D.png) | `#2D2D2D` | Base escura, fundos e elementos estruturais |
 | ![#808080](https://placehold.co/40x20/808080/808080.png) | `#808080` | Legendas e placeholders |
 
+</div>
+
 ---
 
-## 👥 Equipe
+<h2 align="center">══════════════ Equipe ══════════════</h2>
+
+<div align="center">
 
 | Foto | Nome | Função | GitHub | LinkedIn |
 | :---: | --- | --- | :---: | :---: |
@@ -213,6 +235,8 @@ cp .env.example .env
 | <img src="https://via.placeholder.com/60/2D2D2D/FFFFFF?text=%20" width="60" /> | Pedro Henrique Quirino | Product Owner | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/pedroquirino) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/phpquirino/) |
 | <img src="https://via.placeholder.com/60/2D2D2D/FFFFFF?text=%20" width="60" /> | Giovanna Marques | Desenvolvedora | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Markeis24) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/giovanna-marques-221998397) |
 | <img src="https://via.placeholder.com/60/2D2D2D/FFFFFF?text=%20" width="60" /> | José Wesley | Desenvolvedor | [![GitHub](https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jwesleey) | [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jwesley) |
+
+</div>
 
 ---
 
