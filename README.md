@@ -16,7 +16,8 @@
 
 ---
 
-<h2 align="center">══════════════ Sumário ══════════════</h2>
+<br>
+<h2 align="center">════════════════════════ ⫶☰ Sumário ════════════════════════</h2>
 
 
 - [Sobre a Visiona](#-sobre-a-visiona)
@@ -33,16 +34,16 @@
 - [Equipe](#-equipe)
 
 ---
-
-<h2 align="center">══════════════ Sobre a Visiona ══════════════</h2>
+<br>
+<h2 align="center">══════════════════════ 🛰 Sobre a Visiona 🛰 ══════════════════════</h2>
 
 A **Visiona** atua em projetos que utilizam informações territoriais, ambientais e geoespaciais para apoiar
 processos de análise, planejamento e tomada de decisão, atendendo instituições públicas, empresas privadas,
 pesquisadores e analistas.
 
 ---
-
-<h2 align="center">══════════════ Desafio Proposto ══════════════</h2>
+<br>
+<h2 align="center">═════════════════════ ✎ᝰ. Desafio Proposto ═════════════════════</h2>
 
 ### Governança e Rastreabilidade de Dados Geoespaciais de Imóveis Rurais
 
@@ -51,7 +52,8 @@ públicas ou privadas, contendo registros cadastrais, informações geográficas
 longo do tempo. Esses dados são amplamente utilizados para avaliação de aspectos ambientais, acompanhamento
 territorial e geração de indicadores estratégicos.
 
-<h2 align="center">══════════════ Situação Atual ══════════════</h2>
+<br>
+<h2 align="center">══════════════════════ ⓘ Situação Atual ⓘ ══════════════════════</h2>
 
 Os dados utilizados pela organização possuem características variadas:
 
@@ -73,7 +75,8 @@ de utilização. Quando um indicador é produzido, nem sempre é simples identif
 Essa situação gera desafios relacionados à **transparência, confiabilidade e auditabilidade** dos resultados
 produzidos.
 
-<h2 align="center">══════════════ O Problema ══════════════</h2>
+<br>
+<h2 align="center">═══════════════════════ ➤ O Problema ═══════════════════════</h2>
 
 A organização necessita melhorar a **governança das informações** utilizadas em seus processos analíticos.
 
@@ -85,7 +88,8 @@ Além disso, a empresa deseja aumentar a confiança sobre a qualidade das inform
 indicadores, reduzindo o impacto de inconsistências, duplicidades e divergências existentes nas bases
 recebidas.
 
-<h2 align="center">══════════════ Objetivo ══════════════</h2>
+<br>
+<h2 align="center">════════════════════════ ✔ Objetivo ════════════════════════</h2>
 
 Desenvolver uma solução que permita:
 
@@ -99,7 +103,8 @@ Desenvolver uma solução que permita:
 
 ---
 
-<h2 align="center">══════════════ Backlog do Produto ══════════════</h2>
+<br>
+<h2 align="center">════════════════════ 𖤘 Backlog do Produto ════════════════════</h2>
 
 <p align="center">
   <a href="#">
@@ -107,7 +112,8 @@ Desenvolver uma solução que permita:
   </a>
 </p>
 
-<h2 align="center">══════════════ Cronograma das Sprints ══════════════</h2>
+<br>
+<h2 align="center">══════════════════ 𝄜 Cronograma das Sprints 𝄜 ══════════════════</h2>
 
 <div align="center">
 
@@ -122,7 +128,8 @@ Desenvolver uma solução que permita:
 
 ---
 
-<h2 align="center">══════════════ Tecnologias Usadas ══════════════</h2>
+<br>
+<h2 align="center">════════════════════ ⌨ Tecnologias Usadas ⌨ ════════════════════</h2>
 
 <div align="center">
 
@@ -167,7 +174,8 @@ Desenvolver uma solução que permita:
 
 ---
 
-<h2 align="center">══════════════ Como Executar o Projeto ══════════════</h2>
+<br>
+<h2 align="center">════════════════════ Como Executar o Projeto ════════════════════</h2>
 
 ```bash
 # Clonar o repositório
@@ -191,7 +199,8 @@ cp .env.example .env
 
 ---
 
-<h2 align="center">══════════════ Documentação ══════════════</h2>
+<br>
+<h2 align="center">════════════════════════ Documentação ════════════════════════</h2>
 
 <div align="center">
 
@@ -210,7 +219,8 @@ cp .env.example .env
 
 ---
 
-<h2 align="center">══════════════ Paleta de Cores do Projeto ══════════════</h2>
+<br>
+<h2 align="center">════════════════════ Paleta de Cores do Projeto ════════════════════</h2>
 
 <div align="center">
 
@@ -225,7 +235,8 @@ cp .env.example .env
 
 ---
 
-<h2 align="center">══════════════ Equipe ══════════════</h2>
+<br>
+<h2 align="center">════════════════════════ 𖨆𖨆𖨆𖨆 Equipe 𖨆𖨆𖨆𖨆 ════════════════════════</h2>
 
 <div align="center">
 
