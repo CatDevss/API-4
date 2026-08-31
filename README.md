@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://via.placeholder.com/900x200/2D2D2D/FE5000?text=Visiona+%7C+Nome+do+Projeto" alt="Banner do projeto" />
+  <img src="Docs/assets/Banner_Visiona.jpg" alt="Banner" width="900">
 </p>
 
 <h1 align="center">Nome do Projeto</h1>
