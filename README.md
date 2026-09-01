@@ -218,7 +218,7 @@ Desenvolver uma solução que permita:
 
 <br>
 
-<h2 align="center">════════════════════ Como Executar o Projeto ════════════════════</h2>
+<h2 align="center">══════════════════ 🗄 Como Executar o Projeto 🗄 ══════════════════</h2>
 
 <br>
 
@@ -248,7 +248,7 @@ cp .env.example .env
 
 <br>
 
-<h2 align="center">════════════════════════ Documentação ════════════════════════</h2>
+<h2 align="center">═══════════════════════ 🗁 Documentação ═══════════════════════</h2>
 
 <br>
 
@@ -273,7 +273,7 @@ cp .env.example .env
 
 <br>
 
-<h2 align="center">════════════════════ Paleta de Cores do Projeto ════════════════════</h2>
+<h2 align="center">══════════════════ ꒷꒦ Paleta de Cores do Projeto ꒷꒦ ══════════════════</h2>
 
 <br>
 
