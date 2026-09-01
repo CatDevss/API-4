@@ -43,7 +43,7 @@
 
 <br>
 
-<h2 align="center">══════════════ ☄ Sobre a Visiona ☄ ══════════════</h2>
+<h2 align="center">══════════════ ✰ Sobre a Visiona ✰ ══════════════</h2>
 
 <br>
 
