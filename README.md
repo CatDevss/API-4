@@ -14,11 +14,15 @@
   <img src="https://img.shields.io/badge/licença-a%20definir-2D2D2D?style=for-the-badge&logoColor=white" alt="licença" />
 </p>
 
+<br>
+
 ---
 
 <br>
+
 <h2 align="center">════════════════════════ ⫶☰ Sumário ════════════════════════</h2>
 
+<br>
 
 - [Sobre a Visiona](#-sobre-a-visiona)
 - [Desafio Proposto](#-desafio-proposto)
@@ -33,17 +37,29 @@
 - [Paleta de Cores do Projeto](#-paleta-de-cores-do-projeto)
 - [Equipe](#-equipe)
 
----
 <br>
+
+---
+
+<br>
+
 <h2 align="center">══════════════════════ 🛰 Sobre a Visiona 🛰 ══════════════════════</h2>
+
+<br>
 
 A **Visiona** atua em projetos que utilizam informações territoriais, ambientais e geoespaciais para apoiar
 processos de análise, planejamento e tomada de decisão, atendendo instituições públicas, empresas privadas,
 pesquisadores e analistas.
 
----
 <br>
+
+---
+
+<br>
+
 <h2 align="center">═════════════════════ ✎ᝰ. Desafio Proposto ═════════════════════</h2>
+
+<br>
 
 ### Governança e Rastreabilidade de Dados Geoespaciais de Imóveis Rurais
 
@@ -53,7 +69,10 @@ longo do tempo. Esses dados são amplamente utilizados para avaliação de aspec
 territorial e geração de indicadores estratégicos.
 
 <br>
+
 <h2 align="center">══════════════════════ ⓘ Situação Atual ⓘ ══════════════════════</h2>
+
+<br>
 
 Os dados utilizados pela organização possuem características variadas:
 
@@ -76,7 +95,10 @@ Essa situação gera desafios relacionados à **transparência, confiabilidade e
 produzidos.
 
 <br>
+
 <h2 align="center">═══════════════════════ ➤ O Problema ═══════════════════════</h2>
+
+<br>
 
 A organização necessita melhorar a **governança das informações** utilizadas em seus processos analíticos.
 
@@ -89,7 +111,10 @@ indicadores, reduzindo o impacto de inconsistências, duplicidades e divergênci
 recebidas.
 
 <br>
+
 <h2 align="center">════════════════════════ ✔ Objetivo ════════════════════════</h2>
+
+<br>
 
 Desenvolver uma solução que permita:
 
@@ -101,10 +126,15 @@ Desenvolver uma solução que permita:
 
 > *Descrever aqui, de forma mais detalhada, a proposta de solução definida pela equipe.*
 
+<br>
+
 ---
 
 <br>
+
 <h2 align="center">════════════════════ 𖤘 Backlog do Produto ════════════════════</h2>
+
+<br>
 
 <p align="center">
   <a href="#">
@@ -113,7 +143,10 @@ Desenvolver uma solução que permita:
 </p>
 
 <br>
+
 <h2 align="center">══════════════════ 𝄜 Cronograma das Sprints 𝄜 ══════════════════</h2>
+
+<br>
 
 <div align="center">
 
@@ -126,10 +159,15 @@ Desenvolver uma solução que permita:
 
 </div>
 
+<br>
+
 ---
 
 <br>
+
 <h2 align="center">════════════════════ ⌨ Tecnologias Usadas ⌨ ════════════════════</h2>
+
+<br>
 
 <div align="center">
 
@@ -170,12 +208,19 @@ Desenvolver uma solução que permita:
 
 </div>
 
+<br>
+
 <p align="center"><sub><em>Ajustar os badges conforme as tecnologias efetivamente escolhidas pela equipe.</em></sub></p>
+
+<br>
 
 ---
 
 <br>
+
 <h2 align="center">════════════════════ Como Executar o Projeto ════════════════════</h2>
+
+<br>
 
 ```bash
 # Clonar o repositório
@@ -197,10 +242,15 @@ cp .env.example .env
 > *Detalhar aqui os pré-requisitos (versões de Java, banco de dados, etc.) e o passo a passo completo assim
 > que a stack for definida — recomenda-se manter um `Manual de Instalação` na pasta `docs/`.*
 
+<br>
+
 ---
 
 <br>
+
 <h2 align="center">════════════════════════ Documentação ════════════════════════</h2>
+
+<br>
 
 <div align="center">
 
@@ -217,10 +267,15 @@ cp .env.example .env
 
 </div>
 
+<br>
+
 ---
 
 <br>
+
 <h2 align="center">════════════════════ Paleta de Cores do Projeto ════════════════════</h2>
+
+<br>
 
 <div align="center">
 
@@ -233,10 +288,15 @@ cp .env.example .env
 
 </div>
 
+<br>
+
 ---
 
 <br>
-<h2 align="center">════════════════════════ 𖨆𖨆𖨆𖨆 Equipe 𖨆𖨆𖨆𖨆 ════════════════════════</h2>
+
+<h2 align="center">════════════════════════ 🗫 Equipe 🗫 ════════════════════════</h2>
+
+<br>
 
 <div align="center">
 
@@ -249,7 +309,11 @@ cp .env.example .env
 
 </div>
 
+<br>
+
 ---
+
+<br>
 
 <p align="center">
   <sub>Projeto desenvolvido para a <strong>Visiona Tecnologia Espacial</strong> — Governança e Rastreabilidade de Dados Geoespaciais.</sub>
