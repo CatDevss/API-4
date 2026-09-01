@@ -16,7 +16,7 @@
 
 <br>
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
 
 <br>
 
@@ -39,7 +39,7 @@
 
 <br>
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
 
 <br>
 
@@ -53,7 +53,7 @@ pesquisadores e analistas.
 
 <br>
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
 
 <br>
 
@@ -128,7 +128,7 @@ Desenvolver uma solução que permita:
 
 <br>
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
 
 <br>
 
@@ -161,7 +161,7 @@ Desenvolver uma solução que permita:
 
 <br>
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
 
 <br>
 
@@ -214,7 +214,7 @@ Desenvolver uma solução que permita:
 
 <br>
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
 
 <br>
 
@@ -244,7 +244,7 @@ cp .env.example .env
 
 <br>
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
 
 <br>
 
@@ -269,7 +269,7 @@ cp .env.example .env
 
 <br>
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
 
 <br>
 
@@ -290,7 +290,7 @@ cp .env.example .env
 
 <br>
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
 
 <br>
 
@@ -311,7 +311,7 @@ cp .env.example .env
 
 <br>
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
 
 <br>
 
