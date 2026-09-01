@@ -112,7 +112,7 @@ recebidas.
 
 <br>
 
-<h2 align="center">════════════════ ☑ Objetivo ════════════════</h2>
+<h2 align="center">════════════════ 𖦏 Objetivo ════════════════</h2>
 
 <br>
 
