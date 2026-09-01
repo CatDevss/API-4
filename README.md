@@ -1,3 +1,5 @@
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
+
 <p align="center">
   <img src="Docs/assets/Banner_Visiona.jpg" alt="Banner" width="900">
 </p>
@@ -20,7 +22,7 @@
 
 <br>
 
-<h2 align="center">════════════════ ⫶☰ Sumário ════════════════</h2>
+<h2 align="center"> ⫶☰ Sumário </h2>
 
 <br>
 
@@ -43,7 +45,7 @@
 
 <br>
 
-<h2 align="center">══════════════ ✰ Sobre a Visiona ✰ ══════════════</h2>
+<h2 align="center"> ✰ Sobre a Visiona ✰ </h2>
 
 <br>
 
@@ -57,7 +59,7 @@ pesquisadores e analistas.
 
 <br>
 
-<h2 align="center">═════════════ 𓄲 Desafio Proposto ═════════════</h2>
+<h2 align="center"> ⌕ Desafio Proposto ⌕ </h2>
 
 <br>
 
@@ -70,7 +72,10 @@ territorial e geração de indicadores estratégicos.
 
 <br>
 
-<h2 align="center">══════════════ ⓘ Situação Atual ⓘ ══════════════</h2>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
+
+
+<h2 align="center"> ⚠ Situação Atual ⚠ </h2>
 
 <br>
 
@@ -96,7 +101,10 @@ produzidos.
 
 <br>
 
-<h2 align="center">═══════════════ ➤ O Problema ═══════════════</h2>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
+
+
+<h2 align="center"> ⤷ O Problema ⤶ </h2>
 
 <br>
 
@@ -112,7 +120,9 @@ recebidas.
 
 <br>
 
-<h2 align="center">════════════════ 𖦏 Objetivo ════════════════</h2>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
+
+<h2 align="center"> ⿻ Objetivo ⿻ </h2>
 
 <br>
 
@@ -132,7 +142,7 @@ Desenvolver uma solução que permita:
 
 <br>
 
-<h2 align="center">════════════ 𖤘 Backlog do Produto ════════════</h2>
+<h2 align="center"> 𖤘 Backlog do Produto 𖤘 </h2>
 
 <br>
 
@@ -144,7 +154,9 @@ Desenvolver uma solução que permita:
 
 <br>
 
-<h2 align="center">══════════ 𝄜 Cronograma das Sprints 𝄜 ══════════</h2>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
+
+<h2 align="center"> 𝄜 Cronograma das Sprints 𝄜 </h2>
 
 <br>
 
@@ -152,10 +164,10 @@ Desenvolver uma solução que permita:
 
 | Sprint | Período | Link documentação | Vídeo/Demo |
 | :---: | :---: | :---: | :---: |
-| Sprint 1 | dd/mm - dd/mm | [Docs Sprint 1](#) | [Demo](#) |
-| Sprint 2 | dd/mm - dd/mm | [Docs Sprint 2](#) | [Demo](#) |
-| Sprint 3 | dd/mm - dd/mm | [Docs Sprint 3](#) | [Demo](#) |
-| Entrega Final | dd/mm/aaaa | — | — |
+| Sprint 1 | 07/09 - 27/09 | [Docs Sprint 1](#) | [Demo](#) |
+| Sprint 2 | 05/10 - 25/09 | [Docs Sprint 2](#) | [Demo](#) |
+| Sprint 3 | 02/11 - 22/11 | [Docs Sprint 3](#) | [Demo](#) |
+| Entrega Final | 03/12/2026 | — | — |
 
 </div>
 
@@ -165,7 +177,7 @@ Desenvolver uma solução que permita:
 
 <br>
 
-<h2 align="center">════════════ ⌨ Tecnologias Usadas ⌨ ════════════</h2>
+<h2 align="center"> ⌨ Tecnologias Usadas ⌨ </h2>
 
 <br>
 
@@ -175,14 +187,14 @@ Desenvolver uma solução que permita:
   <tr>
     <td align="center" width="50%">
       <img width="60" height="3" src="https://placehold.co/60x3/FE5000/FE5000.png"/>
-      <br><strong>⚙️ BACKEND</strong><br><br>
+      <br><strong>⚙︎ BACKEND</strong><br><br>
       <img src="https://img.shields.io/badge/Java-FE5000?style=for-the-badge&logo=openjdk&logoColor=white" /><br>
       <img src="https://img.shields.io/badge/Spring_Boot-FE5000?style=for-the-badge&logo=springboot&logoColor=white" /><br>
       <img src="https://img.shields.io/badge/Maven-FE5000?style=for-the-badge&logo=apachemaven&logoColor=white" />
     </td>
     <td align="center" width="50%">
       <img width="60" height="3" src="https://placehold.co/60x3/FFA300/FFA300.png"/>
-      <br><strong>🗄️ BANCO DE DADOS</strong><br><br>
+      <br><strong>⛁ BANCO DE DADOS</strong><br><br>
       <img src="https://img.shields.io/badge/PostgreSQL-FFA300?style=for-the-badge&logo=postgresql&logoColor=2D2D2D" /><br>
       <img src="https://img.shields.io/badge/PostGIS-FFA300?style=for-the-badge&logo=postgresql&logoColor=2D2D2D" />
     </td>
@@ -190,14 +202,14 @@ Desenvolver uma solução que permita:
   <tr>
     <td align="center" width="50%">
       <img width="60" height="3" src="https://placehold.co/60x3/2D2D2D/2D2D2D.png"/>
-      <br><strong>🎨 FRONTEND</strong><br><br>
+      <br><strong>🖌 FRONTEND</strong><br><br>
       <img src="https://img.shields.io/badge/HTML5-2D2D2D?style=for-the-badge&logo=html5&logoColor=FFA300" /><br>
       <img src="https://img.shields.io/badge/CSS3-2D2D2D?style=for-the-badge&logo=css3&logoColor=FFA300" /><br>
       <img src="https://img.shields.io/badge/JavaScript-2D2D2D?style=for-the-badge&logo=javascript&logoColor=FFA300" />
     </td>
     <td align="center" width="50%">
       <img width="60" height="3" src="https://placehold.co/60x3/808080/808080.png"/>
-      <br><strong>🛠️ FERRAMENTAS & GESTÃO</strong><br><br>
+      <br><strong>🛠 FERRAMENTAS & GESTÃO</strong><br><br>
       <img src="https://img.shields.io/badge/GitHub-808080?style=for-the-badge&logo=github&logoColor=white" /><br>
       <img src="https://img.shields.io/badge/GitHub_Projects-808080?style=for-the-badge&logo=github&logoColor=white" /><br>
       <img src="https://img.shields.io/badge/Figma-808080?style=for-the-badge&logo=figma&logoColor=white" /><br>
@@ -218,7 +230,7 @@ Desenvolver uma solução que permita:
 
 <br>
 
-<h2 align="center">══════════ 🗄 Como Executar o Projeto 🗄 ══════════</h2>
+<h2 align="center"> 🗄 Como Executar o Projeto 🗄 </h2>
 
 <br>
 
@@ -248,7 +260,7 @@ cp .env.example .env
 
 <br>
 
-<h2 align="center">═══════════════ 🗁 Documentação ═══════════════</h2>
+<h2 align="center"> 🗁 Documentação 🗁 </h2>
 
 <br>
 
@@ -273,7 +285,7 @@ cp .env.example .env
 
 <br>
 
-<h2 align="center">══════════ ꒷꒦ Paleta de Cores do Projeto ꒷꒦ ══════════</h2>
+<h2 align="center"> ꒷꒦ Paleta de Cores do Projeto ꒷꒦ </h2>
 
 <br>
 
@@ -294,7 +306,7 @@ cp .env.example .env
 
 <br>
 
-<h2 align="center">════════════════ 🗫 Equipe 🗫 ════════════════</h2>
+<h2 align="center"> 🗫 Equipe 🗫 </h2>
 
 <br>
 
