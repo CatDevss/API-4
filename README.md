@@ -20,7 +20,7 @@
 
 <br>
 
-<h2 align="center">════════════════════════ ⫶☰ Sumário ════════════════════════</h2>
+<h2 align="center">════════════════ ⫶☰ Sumário ════════════════</h2>
 
 <br>
 
@@ -43,7 +43,7 @@
 
 <br>
 
-<h2 align="center">══════════════════════ 🛰 Sobre a Visiona 🛰 ══════════════════════</h2>
+<h2 align="center">══════════════ 🛰 Sobre a Visiona 🛰 ══════════════</h2>
 
 <br>
 
@@ -57,7 +57,7 @@ pesquisadores e analistas.
 
 <br>
 
-<h2 align="center">═════════════════════ ✎ᝰ. Desafio Proposto ═════════════════════</h2>
+<h2 align="center">═════════════ 𓄲 Desafio Proposto ═════════════</h2>
 
 <br>
 
@@ -70,7 +70,7 @@ territorial e geração de indicadores estratégicos.
 
 <br>
 
-<h2 align="center">══════════════════════ ⓘ Situação Atual ⓘ ══════════════════════</h2>
+<h2 align="center">══════════════ ⓘ Situação Atual ⓘ ══════════════</h2>
 
 <br>
 
@@ -112,7 +112,7 @@ recebidas.
 
 <br>
 
-<h2 align="center">════════════════════════ ✔ Objetivo ════════════════════════</h2>
+<h2 align="center">════════════════ ☑ Objetivo ════════════════</h2>
 
 <br>
 
@@ -132,7 +132,7 @@ Desenvolver uma solução que permita:
 
 <br>
 
-<h2 align="center">════════════════════ 𖤘 Backlog do Produto ════════════════════</h2>
+<h2 align="center">════════════ 𖤘 Backlog do Produto ════════════</h2>
 
 <br>
 
@@ -144,7 +144,7 @@ Desenvolver uma solução que permita:
 
 <br>
 
-<h2 align="center">══════════════════ 𝄜 Cronograma das Sprints 𝄜 ══════════════════</h2>
+<h2 align="center">══════════ 𝄜 Cronograma das Sprints 𝄜 ══════════</h2>
 
 <br>
 
@@ -165,7 +165,7 @@ Desenvolver uma solução que permita:
 
 <br>
 
-<h2 align="center">════════════════════ ⌨ Tecnologias Usadas ⌨ ════════════════════</h2>
+<h2 align="center">════════════ ⌨ Tecnologias Usadas ⌨ ════════════</h2>
 
 <br>
 
@@ -218,7 +218,7 @@ Desenvolver uma solução que permita:
 
 <br>
 
-<h2 align="center">══════════════════ 🗄 Como Executar o Projeto 🗄 ══════════════════</h2>
+<h2 align="center">══════════ 🗄 Como Executar o Projeto 🗄 ══════════</h2>
 
 <br>
 
@@ -248,7 +248,7 @@ cp .env.example .env
 
 <br>
 
-<h2 align="center">═══════════════════════ 🗁 Documentação ═══════════════════════</h2>
+<h2 align="center">═══════════════ 🗁 Documentação ═══════════════</h2>
 
 <br>
 
@@ -273,7 +273,7 @@ cp .env.example .env
 
 <br>
 
-<h2 align="center">══════════════════ ꒷꒦ Paleta de Cores do Projeto ꒷꒦ ══════════════════</h2>
+<h2 align="center">══════════ ꒷꒦ Paleta de Cores do Projeto ꒷꒦ ══════════</h2>
 
 <br>
 
@@ -294,7 +294,7 @@ cp .env.example .env
 
 <br>
 
-<h2 align="center">════════════════════════ 🗫 Equipe 🗫 ════════════════════════</h2>
+<h2 align="center">════════════════ 🗫 Equipe 🗫 ════════════════</h2>
 
 <br>
 
