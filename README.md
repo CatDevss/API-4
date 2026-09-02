@@ -75,7 +75,7 @@ territorial e geração de indicadores estratégicos.
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
 
 
-<h2 align="center"> ⚠ Situação Atual ⚠ </h2>
+<h2 align="center"> ᵎ!ᵎ Situação Atual ᵎ!ᵎ </h2>
 
 <br>
 
