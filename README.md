@@ -53,7 +53,7 @@
 
 <br>
 
-<h2 align="center"> Sobre a Visiona </h2>
+<h2 align="center">Sobre a Visiona</h2>
 
 <br>
 
@@ -67,7 +67,7 @@ pesquisadores e analistas.
 
 <br>
 
-<h2 align="center"> O Desafio </h2>
+<h2 align="center">O Desafio</h2>
 
 <br>
 
@@ -82,7 +82,7 @@ diferentes — sem gestão centralizada, o resultado não é auditável.
   <tr>
     <td align="center" width="50%">
       <img width="60" height="3" src="https://placehold.co/60x3/FE5000/FE5000.png"/>
-      <br><strong> CONTEXTO</strong><br><br>
+      <br><strong>CONTEXTO</strong><br><br>
       <sub>
       🌱 <strong>Dados de imóveis rurais, APP e RL</strong> — limites vetoriais, uso e cobertura do solo e atributos cadastrais alimentam os indicadores<br><br>
       🗂️ <strong>Múltiplas fontes, formatos e versões</strong> — cada origem tem competência, esquema e sistema de referência próprios<br><br>
@@ -91,7 +91,7 @@ diferentes — sem gestão centralizada, o resultado não é auditável.
     </td>
     <td align="center" width="50%">
       <img width="60" height="3" src="https://placehold.co/60x3/FFA300/FFA300.png"/>
-      <br><strong> O PROBLEMA A RESOLVER</strong><br><br>
+      <br><strong>O PROBLEMA A RESOLVER</strong><br><br>
       <sub>
       🔁 Qual versão entrou no cálculo?<br><br>
       🛡️ Quais registros foram rejeitados e por quê?<br><br>
@@ -114,7 +114,7 @@ diferentes — sem gestão centralizada, o resultado não é auditável.
 
 <br>
 
-<h2 align="center"> 🗺 Área de Interesse </h2>
+<h2 align="center">Área de Interesse</h2>
 
 <br>
 
@@ -141,7 +141,7 @@ antes do processamento.
 
 <br>
 
-<h2 align="center"> Objetivo e Fluxo Mínimo </h2>
+<h2 align="center">Objetivo e Fluxo Mínimo</h2>
 
 <br>
 
@@ -182,7 +182,7 @@ ao indicador publicado e rastreável.
 
 <br>
 
-<h2 align="center"> ⚙ Escopo e Requisitos Funcionais </h2>
+<h2 align="center">Escopo e Requisitos Funcionais</h2>
 
 <br>
 
@@ -217,7 +217,7 @@ Escopo funcional mínimo do MVP — tudo disponível pelo portal e pelas APIs, s
 
 <br>
 
-<h2 align="center"> Indicadores Ambientais </h2>
+<h2 align="center">Indicadores Ambientais</h2>
 
 <br>
 
@@ -250,7 +250,7 @@ camadas do catálogo. Cada indicador é rastreável até a fonte, a versão dos 
 
 <br>
 
-<h2 align="center"> 🗄 Dados Necessários e Fontes </h2>
+<h2 align="center">Dados Necessários e Fontes</h2>
 
 <br>
 
@@ -285,7 +285,7 @@ Camadas de entrada que a solução precisa ingerir para calcular os sete indicad
 
 <br>
 
-<h2 align="center"> Requisitos Não Funcionais </h2>
+<h2 align="center">Requisitos Não Funcionais</h2>
 
 <br>
 
@@ -318,7 +318,7 @@ Tecnologias do semestre e atributos de qualidade que serão avaliados no projeto
 
 <br>
 
-<h2 align="center"> Entrega Esperada e Critério de Sucesso </h2>
+<h2 align="center">Entrega Esperada e Critério de Sucesso</h2>
 
 <br>
 
@@ -332,7 +332,7 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
   <tr>
     <td align="center" width="50%">
       <img width="60" height="3" src="https://placehold.co/60x3/FE5000/FE5000.png"/>
-      <br><strong>📦 ENTREGAS PRINCIPAIS</strong><br><br>
+      <br><strong>ENTREGAS PRINCIPAIS</strong><br><br>
       <sub>
       📊 <strong>Aplicação web em nuvem</strong> — catálogo, mapas, tabelas, gráficos, comparação de versões, downloads e painel do Airflow<br><br>
       🗂️ <strong>Plataforma de dados integrada</strong> — Oracle, GeoDataLake, DAGs, APIs documentadas, cálculo analítico, fila de rejeitados, versionamento, qualidade, linhagem e auditoria<br><br>
@@ -342,7 +342,7 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
     </td>
     <td align="center" width="50%">
       <img width="60" height="3" src="https://placehold.co/60x3/FFA300/FFA300.png"/>
-      <br><strong>✅ CRITÉRIO DE SUCESSO DO MVP</strong><br><br>
+      <br><strong>CRITÉRIO DE SUCESSO DO MVP</strong><br><br>
       <sub>
       🟢 Cadastrar uma fonte, ingerir um conjunto e acompanhar as etapas no Airflow<br><br>
       🟢 Consultar as rejeições e executar os cruzamentos e os cálculos analíticos<br><br>
@@ -366,7 +366,7 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
 
 <br>
 
-<h2 align="center"> Backlog do Produto </h2>
+<h2 align="center">Backlog do Produto</h2>
 
 <br>
 
@@ -380,7 +380,7 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
 
-<h2 align="center"> Cronograma das Sprints </h2>
+<h2 align="center">Cronograma das Sprints</h2>
 
 <br>
 
@@ -401,7 +401,7 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
 
 <br>
 
-<h2 align="center"> Tecnologias Usadas </h2>
+<h2 align="center">Tecnologias Usadas</h2>
 
 <br>
 
@@ -411,7 +411,7 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
   <tr>
     <td align="center" width="50%">
       <img width="60" height="3" src="https://placehold.co/60x3/FE5000/FE5000.png"/>
-      <br><strong> BACKEND</strong><br><br>
+      <br><strong>BACKEND</strong><br><br>
       <img src="https://img.shields.io/badge/Java-FE5000?style=for-the-badge&logo=openjdk&logoColor=white" /><br>
       <img src="https://img.shields.io/badge/Spring_Boot-FE5000?style=for-the-badge&logo=springboot&logoColor=white" /><br>
       <img src="https://img.shields.io/badge/Spring_Security-FE5000?style=for-the-badge&logo=springsecurity&logoColor=white" /><br>
@@ -420,7 +420,7 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
     </td>
     <td align="center" width="50%">
       <img width="60" height="3" src="https://placehold.co/60x3/FFA300/FFA300.png"/>
-      <br><strong> BANCO DE DADOS</strong><br><br>
+      <br><strong>BANCO DE DADOS</strong><br><br>
       <img src="https://img.shields.io/badge/Oracle_Database-FFA300?style=for-the-badge&logo=oracle&logoColor=2D2D2D" /><br>
       <img src="https://img.shields.io/badge/PL/SQL-FFA300?style=for-the-badge&logo=oracle&logoColor=2D2D2D" />
     </td>
@@ -428,7 +428,7 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
   <tr>
     <td align="center" width="50%">
       <img width="60" height="3" src="https://placehold.co/60x3/2D2D2D/2D2D2D.png"/>
-      <br><strong> FRONTEND</strong><br><br>
+      <br><strong>FRONTEND</strong><br><br>
       <img src="https://img.shields.io/badge/Vue.js-2D2D2D?style=for-the-badge&logo=vuedotjs&logoColor=FFA300" /><br>
       <img src="https://img.shields.io/badge/Axios-2D2D2D?style=for-the-badge&logo=axios&logoColor=FFA300" /><br>
       <img src="https://img.shields.io/badge/Leaflet-2D2D2D?style=for-the-badge&logo=leaflet&logoColor=FFA300" /><br>
@@ -436,7 +436,7 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
     </td>
     <td align="center" width="50%">
       <img width="60" height="3" src="https://placehold.co/60x3/808080/808080.png"/>
-      <br><strong> DADOS & NUVEM</strong><br><br>
+      <br><strong>DADOS & NUVEM</strong><br><br>
       <img src="https://img.shields.io/badge/Apache_Airflow-808080?style=for-the-badge&logo=apacheairflow&logoColor=white" /><br>
       <img src="https://img.shields.io/badge/Oracle_Cloud-808080?style=for-the-badge&logo=oracle&logoColor=white" /><br>
       <img src="https://img.shields.io/badge/GeoJSON-808080?style=for-the-badge&logo=geopandas&logoColor=white" />
@@ -445,7 +445,7 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
   <tr>
     <td align="center" width="50%" colspan="2">
       <img width="60" height="3" src="https://placehold.co/60x3/FE5000/FE5000.png"/>
-      <br><strong> FERRAMENTAS & GESTÃO</strong><br><br>
+      <br><strong>FERRAMENTAS & GESTÃO</strong><br><br>
       <img src="https://img.shields.io/badge/GitHub-FE5000?style=for-the-badge&logo=github&logoColor=white" />
       <img src="https://img.shields.io/badge/GitHub_Projects-FE5000?style=for-the-badge&logo=github&logoColor=white" />
       <img src="https://img.shields.io/badge/Figma-FE5000?style=for-the-badge&logo=figma&logoColor=white" />
@@ -467,7 +467,7 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
 
 <br>
 
-<h2 align="center"> Como Executar o Projeto </h2>
+<h2 align="center">Como Executar o Projeto</h2>
 
 <br>
 
@@ -528,7 +528,7 @@ cp .env.example .env
 
 <br>
 
-<h2 align="center"> Paleta de Cores do Projeto </h2>
+<h2 align="center">Paleta de Cores do Projeto</h2>
 
 <br>
 
@@ -549,7 +549,7 @@ cp .env.example .env
 
 <br>
 
-<h2 align="center"> Equipe </h2>
+<h2 align="center">Equipe</h2>
 
 <br>
 
