@@ -26,7 +26,7 @@
 
 <br>
 
-<h2 align="center"> ⫶☰ Sumário </h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/list-details.svg?color=%232D2D2D" width="20" /> Sumário</h2>
 
 <br>
 
@@ -53,7 +53,7 @@
 
 <br>
 
-<h2 align="center">Sobre a Visiona</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/building-broadcast-tower.svg?color=%232D2D2D" width="20" /> Sobre a Visiona</h2>
 
 <br>
 
@@ -67,7 +67,7 @@ pesquisadores e analistas.
 
 <br>
 
-<h2 align="center">O Desafio</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/target-arrow.svg?color=%232D2D2D" width="20" /> O Desafio</h2>
 
 <br>
 
@@ -84,19 +84,19 @@ diferentes — sem gestão centralizada, o resultado não é auditável.
       <img width="60" height="3" src="https://placehold.co/60x3/FE5000/FE5000.png"/>
       <br><strong>CONTEXTO</strong><br><br>
       <sub>
-      🌱 <strong>Dados de imóveis rurais, APP e RL</strong> — limites vetoriais, uso e cobertura do solo e atributos cadastrais alimentam os indicadores<br><br>
-      🗂️ <strong>Múltiplas fontes, formatos e versões</strong> — cada origem tem competência, esquema e sistema de referência próprios<br><br>
-      📊 <strong>Decisões dependem desses números</strong> — órgãos públicos e empresas usam os indicadores para planejar, fiscalizar e conceder crédito
+      <img src="https://api.iconify.design/tabler/map-2.svg?color=%232D2D2D" width="16" /> <strong>Dados de imóveis rurais, APP e RL</strong> — limites vetoriais, uso e cobertura do solo e atributos cadastrais alimentam os indicadores<br><br>
+      <img src="https://api.iconify.design/tabler/stack-2.svg?color=%232D2D2D" width="16" /> <strong>Múltiplas fontes, formatos e versões</strong> — cada origem tem competência, esquema e sistema de referência próprios<br><br>
+      <img src="https://api.iconify.design/tabler/chart-bar.svg?color=%232D2D2D" width="16" /> <strong>Decisões dependem desses números</strong> — órgãos públicos e empresas usam os indicadores para planejar, fiscalizar e conceder crédito
       </sub>
     </td>
     <td align="center" width="50%">
       <img width="60" height="3" src="https://placehold.co/60x3/FFA300/FFA300.png"/>
       <br><strong>O PROBLEMA A RESOLVER</strong><br><br>
       <sub>
-      🔁 Qual versão entrou no cálculo?<br><br>
-      🛡️ Quais registros foram rejeitados e por quê?<br><br>
-      🔌 O que foi transformado no caminho?<br><br>
-      🗃️ O resultado pode ser reconstituído?
+      <img src="https://api.iconify.design/tabler/refresh.svg?color=%232D2D2D" width="16" /> Qual versão entrou no cálculo?<br><br>
+      <img src="https://api.iconify.design/tabler/shield-x.svg?color=%232D2D2D" width="16" /> Quais registros foram rejeitados e por quê?<br><br>
+      <img src="https://api.iconify.design/tabler/arrows-transfer-up.svg?color=%232D2D2D" width="16" /> O que foi transformado no caminho?<br><br>
+      <img src="https://api.iconify.design/tabler/history.svg?color=%232D2D2D" width="16" /> O resultado pode ser reconstituído?
       </sub>
     </td>
   </tr>
@@ -114,7 +114,7 @@ diferentes — sem gestão centralizada, o resultado não é auditável.
 
 <br>
 
-<h2 align="center">Área de Interesse</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/map-pin.svg?color=%232D2D2D" width="20" /> Área de Interesse</h2>
 
 <br>
 
@@ -141,7 +141,7 @@ antes do processamento.
 
 <br>
 
-<h2 align="center">Objetivo e Fluxo Mínimo</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/route.svg?color=%232D2D2D" width="20" /> Objetivo e Fluxo Mínimo</h2>
 
 <br>
 
@@ -182,7 +182,7 @@ ao indicador publicado e rastreável.
 
 <br>
 
-<h2 align="center">Escopo e Requisitos Funcionais</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/list-check.svg?color=%232D2D2D" width="20" /> Escopo e Requisitos Funcionais</h2>
 
 <br>
 
@@ -194,16 +194,16 @@ Escopo funcional mínimo do MVP — tudo disponível pelo portal e pelas APIs, s
 
 | Requisito | Descrição |
 | --- | --- |
-| 🔑 Acesso autenticado por perfil | Administrador, operador de dados, analista, gestor e auditor |
-| 🗂️ Catálogo de fontes e conjuntos | Esquema, sistema de referência, competência, cobertura e versão vigente |
-| ☁️ Ingestão de dados | CSV, JSON e GeoJSON por upload ou API |
-| 🔁 Pipelines no Apache Airflow | Recebimento, validação, tratamento, cálculo, qualidade e publicação |
-| 🛡️ Qualidade e quarentena | Campos, tipos, domínios, duplicidades, áreas, coordenadas e geometrias |
-| 🗃️ Versões imutáveis e comparação | Versão vigente e anteriores, com linhagem até a fonte e a regra |
-| 🌐 Portal web | Mapa, tabela, gráficos, downloads e painel de execuções do Airflow |
-| 🔌 APIs REST | Catálogo, dados, indicadores, versões, qualidade, linhagem e status |
-| 🌱 Cálculo analítico próprio | Interseções e agregações por imóvel, APP, RL e município |
-| 👤 Auditoria completa | Uploads, regras, execuções, publicações, downloads e responsáveis |
+| <img src="https://api.iconify.design/tabler/key.svg?color=%232D2D2D" width="16" /> Acesso autenticado por perfil | Administrador, operador de dados, analista, gestor e auditor |
+| <img src="https://api.iconify.design/tabler/folders.svg?color=%232D2D2D" width="16" /> Catálogo de fontes e conjuntos | Esquema, sistema de referência, competência, cobertura e versão vigente |
+| <img src="https://api.iconify.design/tabler/upload.svg?color=%232D2D2D" width="16" /> Ingestão de dados | CSV, JSON e GeoJSON por upload ou API |
+| <img src="https://api.iconify.design/tabler/refresh.svg?color=%232D2D2D" width="16" /> Pipelines no Apache Airflow | Recebimento, validação, tratamento, cálculo, qualidade e publicação |
+| <img src="https://api.iconify.design/tabler/shield-check.svg?color=%232D2D2D" width="16" /> Qualidade e quarentena | Campos, tipos, domínios, duplicidades, áreas, coordenadas e geometrias |
+| <img src="https://api.iconify.design/tabler/stack-2.svg?color=%232D2D2D" width="16" /> Versões imutáveis e comparação | Versão vigente e anteriores, com linhagem até a fonte e a regra |
+| <img src="https://api.iconify.design/tabler/world.svg?color=%232D2D2D" width="16" /> Portal web | Mapa, tabela, gráficos, downloads e painel de execuções do Airflow |
+| <img src="https://api.iconify.design/tabler/plug.svg?color=%232D2D2D" width="16" /> APIs REST | Catálogo, dados, indicadores, versões, qualidade, linhagem e status |
+| <img src="https://api.iconify.design/tabler/leaf.svg?color=%232D2D2D" width="16" /> Cálculo analítico próprio | Interseções e agregações por imóvel, APP, RL e município |
+| <img src="https://api.iconify.design/tabler/user-check.svg?color=%232D2D2D" width="16" /> Auditoria completa | Uploads, regras, execuções, publicações, downloads e responsáveis |
 
 </div>
 
@@ -217,7 +217,7 @@ Escopo funcional mínimo do MVP — tudo disponível pelo portal e pelas APIs, s
 
 <br>
 
-<h2 align="center">Indicadores Ambientais</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/leaf.svg?color=%232D2D2D" width="20" /> Indicadores Ambientais</h2>
 
 <br>
 
@@ -250,7 +250,7 @@ camadas do catálogo. Cada indicador é rastreável até a fonte, a versão dos 
 
 <br>
 
-<h2 align="center">Dados Necessários e Fontes</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/database.svg?color=%232D2D2D" width="20" /> Dados Necessários e Fontes</h2>
 
 <br>
 
@@ -285,7 +285,7 @@ Camadas de entrada que a solução precisa ingerir para calcular os sete indicad
 
 <br>
 
-<h2 align="center">Requisitos Não Funcionais</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/settings.svg?color=%232D2D2D" width="20" /> Requisitos Não Funcionais</h2>
 
 <br>
 
@@ -297,14 +297,14 @@ Tecnologias do semestre e atributos de qualidade que serão avaliados no projeto
 
 | Requisito | Descrição |
 | --- | --- |
-| 📱 Stack da aplicação | Java com Spring Boot, APIs REST, JPA/Hibernate e Spring Security; Vue.js com Axios, Leaflet e biblioteca de gráficos |
-| 🗄️ Núcleo relacional Oracle | Transações, constraints, índices, views e rotinas PL/SQL, com conexão segura ao ambiente de nuvem |
-| ☁️ GeoDataLake e orquestração em nuvem | Armazenamento de objetos nas quatro zonas e DAGs do Airflow em serviço gerenciado ou container equivalente |
-| 🗃️ Versões imutáveis e reprodutíveis | Identificadas por hash, fonte, competência, execução, parâmetros, regras e transformações aplicadas |
-| 🛡️ Segurança e menor privilégio | Autenticação e autorização por perfil em telas, APIs e downloads; segredos fora do código; dados sintéticos ou anonimizados |
-| ⚡ Desempenho e disponibilidade | Consultas usuais em até 3 segundos na massa de homologação, com logs, estado de saúde e consumo de recursos visíveis |
-| 📄 Documentação e testes | Arquitetura, modelo e dicionário de dados, OpenAPI/Swagger, DAGs e memória de cálculo; testes de unidade, integração e pipeline |
-| 🚀 Ambiente de nuvem | Portal, APIs, GeoDataLake e Airflow implantados e acessíveis durante a avaliação, na **Oracle Cloud** |
+| <img src="https://api.iconify.design/tabler/device-mobile.svg?color=%232D2D2D" width="16" /> Stack da aplicação | Java com Spring Boot, APIs REST, JPA/Hibernate e Spring Security; Vue.js com Axios, Leaflet e biblioteca de gráficos |
+| <img src="https://api.iconify.design/tabler/database.svg?color=%232D2D2D" width="16" /> Núcleo relacional Oracle | Transações, constraints, índices, views e rotinas PL/SQL, com conexão segura ao ambiente de nuvem |
+| <img src="https://api.iconify.design/tabler/cloud.svg?color=%232D2D2D" width="16" /> GeoDataLake e orquestração em nuvem | Armazenamento de objetos nas quatro zonas e DAGs do Airflow em serviço gerenciado ou container equivalente |
+| <img src="https://api.iconify.design/tabler/stack-2.svg?color=%232D2D2D" width="16" /> Versões imutáveis e reprodutíveis | Identificadas por hash, fonte, competência, execução, parâmetros, regras e transformações aplicadas |
+| <img src="https://api.iconify.design/tabler/shield-lock.svg?color=%232D2D2D" width="16" /> Segurança e menor privilégio | Autenticação e autorização por perfil em telas, APIs e downloads; segredos fora do código; dados sintéticos ou anonimizados |
+| <img src="https://api.iconify.design/tabler/bolt.svg?color=%232D2D2D" width="16" /> Desempenho e disponibilidade | Consultas usuais em até 3 segundos na massa de homologação, com logs, estado de saúde e consumo de recursos visíveis |
+| <img src="https://api.iconify.design/tabler/file-text.svg?color=%232D2D2D" width="16" /> Documentação e testes | Arquitetura, modelo e dicionário de dados, OpenAPI/Swagger, DAGs e memória de cálculo; testes de unidade, integração e pipeline |
+| <img src="https://api.iconify.design/tabler/rocket.svg?color=%232D2D2D" width="16" /> Ambiente de nuvem | Portal, APIs, GeoDataLake e Airflow implantados e acessíveis durante a avaliação, na **Oracle Cloud** |
 
 </div>
 
@@ -318,7 +318,7 @@ Tecnologias do semestre e atributos de qualidade que serão avaliados no projeto
 
 <br>
 
-<h2 align="center">Entrega Esperada e Critério de Sucesso</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/flag.svg?color=%232D2D2D" width="20" /> Entrega Esperada e Critério de Sucesso</h2>
 
 <br>
 
@@ -334,21 +334,21 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
       <img width="60" height="3" src="https://placehold.co/60x3/FE5000/FE5000.png"/>
       <br><strong>ENTREGAS PRINCIPAIS</strong><br><br>
       <sub>
-      📊 <strong>Aplicação web em nuvem</strong> — catálogo, mapas, tabelas, gráficos, comparação de versões, downloads e painel do Airflow<br><br>
-      🗂️ <strong>Plataforma de dados integrada</strong> — Oracle, GeoDataLake, DAGs, APIs documentadas, cálculo analítico, fila de rejeitados, versionamento, qualidade, linhagem e auditoria<br><br>
-      📄 <strong>Documentação e testes</strong> — código-fonte, modelo e dicionário de dados, scripts PL/SQL, memória de cálculo, arquitetura, manuais e relatório técnico<br><br>
-      🚩 <strong>Demonstração do fluxo completo</strong> — da ingestão do arquivo até o resultado publicado e consultado
+      <img src="https://api.iconify.design/tabler/chart-bar.svg?color=%232D2D2D" width="16" /> <strong>Aplicação web em nuvem</strong> — catálogo, mapas, tabelas, gráficos, comparação de versões, downloads e painel do Airflow<br><br>
+      <img src="https://api.iconify.design/tabler/stack-2.svg?color=%232D2D2D" width="16" /> <strong>Plataforma de dados integrada</strong> — Oracle, GeoDataLake, DAGs, APIs documentadas, cálculo analítico, fila de rejeitados, versionamento, qualidade, linhagem e auditoria<br><br>
+      <img src="https://api.iconify.design/tabler/file-text.svg?color=%232D2D2D" width="16" /> <strong>Documentação e testes</strong> — código-fonte, modelo e dicionário de dados, scripts PL/SQL, memória de cálculo, arquitetura, manuais e relatório técnico<br><br>
+      <img src="https://api.iconify.design/tabler/flag-check.svg?color=%232D2D2D" width="16" /> <strong>Demonstração do fluxo completo</strong> — da ingestão do arquivo até o resultado publicado e consultado
       </sub>
     </td>
     <td align="center" width="50%">
       <img width="60" height="3" src="https://placehold.co/60x3/FFA300/FFA300.png"/>
       <br><strong>CRITÉRIO DE SUCESSO DO MVP</strong><br><br>
       <sub>
-      🟢 Cadastrar uma fonte, ingerir um conjunto e acompanhar as etapas no Airflow<br><br>
-      🟢 Consultar as rejeições e executar os cruzamentos e os cálculos analíticos<br><br>
-      🟢 Validar e publicar uma versão imutável dos resultados<br><br>
-      🟢 Acessar a versão por API e pelo portal, com indicadores em mapa, tabela e gráficos<br><br>
-      🟢 Comparar versões e rastrear um resultado até a fonte, a execução e a regra aplicada
+      <img src="https://api.iconify.design/tabler/circle-check.svg?color=%232D2D2D" width="16" /> Cadastrar uma fonte, ingerir um conjunto e acompanhar as etapas no Airflow<br><br>
+      <img src="https://api.iconify.design/tabler/circle-check.svg?color=%232D2D2D" width="16" /> Consultar as rejeições e executar os cruzamentos e os cálculos analíticos<br><br>
+      <img src="https://api.iconify.design/tabler/circle-check.svg?color=%232D2D2D" width="16" /> Validar e publicar uma versão imutável dos resultados<br><br>
+      <img src="https://api.iconify.design/tabler/circle-check.svg?color=%232D2D2D" width="16" /> Acessar a versão por API e pelo portal, com indicadores em mapa, tabela e gráficos<br><br>
+      <img src="https://api.iconify.design/tabler/circle-check.svg?color=%232D2D2D" width="16" /> Comparar versões e rastrear um resultado até a fonte, a execução e a regra aplicada
       </sub>
     </td>
   </tr>
@@ -366,13 +366,13 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
 
 <br>
 
-<h2 align="center">Backlog do Produto</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/clipboard-list.svg?color=%232D2D2D" width="20" /> Backlog do Produto</h2>
 
 <br>
 
 <p align="center">
   <a href="https://github.com/CatDevss/API-4/blob/main/Docs/ProductBacklog.md">
-    <img src="https://img.shields.io/badge/📄_BACKLOG_DO_PRODUTO-2D2D2D?style=for-the-badge&logoColor=white" alt="Backlog do Produto" />
+    <img src="https://img.shields.io/badge/BACKLOG_DO_PRODUTO-2D2D2D?style=for-the-badge&logoColor=white" alt="Backlog do Produto" />
   </a>
 </p>
 
@@ -380,7 +380,7 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
 
-<h2 align="center">Cronograma das Sprints</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/calendar-time.svg?color=%232D2D2D" width="20" /> Cronograma das Sprints</h2>
 
 <br>
 
@@ -401,7 +401,7 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
 
 <br>
 
-<h2 align="center">Tecnologias Usadas</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/code.svg?color=%232D2D2D" width="20" /> Tecnologias Usadas</h2>
 
 <br>
 
@@ -467,7 +467,7 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
 
 <br>
 
-<h2 align="center">Como Executar o Projeto</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/terminal-2.svg?color=%232D2D2D" width="20" /> Como Executar o Projeto</h2>
 
 <br>
 
@@ -501,7 +501,7 @@ cp .env.example .env
 
 <br>
 
-<h2 align="center"> Documentação </h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/file-text.svg?color=%232D2D2D" width="20" /> Documentação</h2>
 
 <br>
 
@@ -527,7 +527,7 @@ cp .env.example .env
 
 <br>
 
-<h2 align="center">Paleta de Cores do Projeto</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/palette.svg?color=%232D2D2D" width="20" /> Paleta de Cores do Projeto</h2>
 
 <br>
 
@@ -548,7 +548,7 @@ cp .env.example .env
 
 <br>
 
-<h2 align="center">Equipe</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/users.svg?color=%232D2D2D" width="20" /> Equipe</h2>
 
 <br>
 
