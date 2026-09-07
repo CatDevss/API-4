@@ -1,3 +1,10 @@
+## Definition of Ready (DoR) da Equipe
+- [ ] User Stories bem definidas e ja escritas na backlog
+- [ ] Regras de negocio de cada user story precisam ja estar registradas
+- [ ] Os dados necessarios preestabelecidos
+- [ ] Mensagens de confirmacao e de erro prescritas
+- [ ] Prototipo da tela pronto
+
 ## Definition of Ready (DoR)
  
 Uma User Story só entra em uma Sprint quando:
