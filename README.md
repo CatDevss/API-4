@@ -374,10 +374,6 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
   <a href="https://github.com/CatDevss/API-4/blob/main/Docs/ProductBacklog.md">
     <img src="https://img.shields.io/badge/📄_BACKLOG_DO_PRODUTO-2D2D2D?style=for-the-badge&logoColor=white" alt="Backlog do Produto" />
   </a>
-  <br>
-  <a href="https://github.com/CatDevss/API-4/blob/main/Docs/DoD_DoR.md">
-    <img src="https://img.shields.io/badge/📄_DoR_and_DoD-2D2D2D?style=for-the-badge&logoColor=white" alt="DoR e DoD" />
-  </a>
 </p>
 
 <br>
@@ -513,10 +509,9 @@ cp .env.example .env
 
 | Documento | Link |
 | --- | :---: |
-| Definition of Ready (DoR) | [Acessar](#) |
-| Definition of Done (DoD) | [Acessar](#) |
-| Estratégia de Branch e Pull Request | [Acessar](#) |
-| Padrão de Commits | [Acessar](#) |
+| Definition of Ready (DoR) e Definition of Done (DoD) | [Acessar](https://github.com/CatDevss/API-4/blob/main/Docs/DoD_DoR.md) |
+| Estratégia de Branch e Pull Request | [Acessar](https://github.com/CatDevss/API-4/blob/main/Docs/Branch_Strategy.md) |
+| Padrão de Commits | [Acessar](https://github.com/CatDevss/API-4/blob/main/Docs/Padrao-de-Commits.md) |
 | Manual de Instalação | [Acessar](#) |
 | Modelo e Dicionário de Dados (Oracle) | [Acessar](#) |
 | Arquitetura e DAGs do Airflow | [Acessar](#) |
