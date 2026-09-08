@@ -18,7 +18,7 @@
 
 <br>
 
-<h2 align="center"><img src="https://api.iconify.design/tabler/git-commit.svg?color=%232D2D2D" width="20" /> Estrutura</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/git-commit.svg?color=%23FFFFFF" width="20" /> Estrutura</h2>
 
 <br>
 
@@ -46,7 +46,7 @@
 
 <br>
 
-<h2 align="center"><img src="https://api.iconify.design/tabler/tag.svg?color=%232D2D2D" width="20" /> Tipos</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/tag.svg?color=%23FFFFFF" width="20" /> Tipos</h2>
 
 <br>
 
@@ -71,7 +71,7 @@
 
 <br>
 
-<h2 align="center"><img src="https://api.iconify.design/tabler/code.svg?color=%232D2D2D" width="20" /> Exemplos</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/code.svg?color=%23FFFFFF" width="20" /> Exemplos</h2>
 
 <br>
 
@@ -89,7 +89,7 @@ refactor(T1.3): simplificar validação do endpoint GET /conjuntos
 
 <br>
 
-<h2 align="center"><img src="https://api.iconify.design/tabler/bolt.svg?color=%232D2D2D" width="20" /> Regras Rápidas</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/bolt.svg?color=%23FFFFFF" width="20" /> Regras Rápidas</h2>
 
 <br>
 
