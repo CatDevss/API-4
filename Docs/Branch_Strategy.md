@@ -13,7 +13,7 @@
 
 <br>
 
-<h2 align="center"><img src="https://api.iconify.design/tabler/alert-triangle.svg?color=%232D2D2D" width="20" /> Antes de Qualquer Push</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/alert-triangle.svg?color=%23FFFFFF" width="20" /> Antes de Qualquer Push</h2>
 
 <br>
 
@@ -47,7 +47,7 @@ git pull origin <nome-da-branch>
 
 <br>
 
-<h2 align="center"><img src="https://api.iconify.design/tabler/lock.svg?color=%232D2D2D" width="20" /> Branches Fixas</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/lock.svg?color=%23FFFFFF" width="20" /> Branches Fixas</h2>
 
 <br>
 
@@ -70,7 +70,7 @@ Não são deletadas durante o projeto:
 
 <br>
 
-<h2 align="center"><img src="https://api.iconify.design/tabler/git-fork.svg?color=%232D2D2D" width="20" /> Branches Temporárias (Feature Branches)</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/git-fork.svg?color=%23FFFFFF" width="20" /> Branches Temporárias (Feature Branches)</h2>
 
 <br>
 
@@ -108,7 +108,7 @@ conflito de nomes no Git, mesmo com tasks de sprints diferentes.
 
 <br>
 
-<h2 align="center"><img src="https://api.iconify.design/tabler/git-pull-request.svg?color=%232D2D2D" width="20" /> Fluxo de Trabalho</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/git-pull-request.svg?color=%23FFFFFF" width="20" /> Fluxo de Trabalho</h2>
 
 <br>
 
@@ -140,7 +140,7 @@ git checkout -b T1.1
 
 <br>
 
-<h2 align="center"><img src="https://api.iconify.design/tabler/git-merge.svg?color=%232D2D2D" width="20" /> Integração na Main</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/git-merge.svg?color=%23FFFFFF" width="20" /> Integração na Main</h2>
 
 <br>
 
@@ -161,7 +161,7 @@ git push origin main
 
 <br>
 
-<h2 align="center"><img src="https://api.iconify.design/tabler/binary-tree-2.svg?color=%232D2D2D" width="20" /> Visualização</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/binary-tree-2.svg?color=%23FFFFFF" width="20" /> Visualização</h2>
 
 <br>
 
@@ -186,7 +186,7 @@ main
 
 <br>
 
-<h2 align="center"><img src="https://api.iconify.design/tabler/tag.svg?color=%232D2D2D" width="20" /> Padrão de Título de Pull Request</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/tag.svg?color=%23FFFFFF" width="20" /> Padrão de Título de Pull Request</h2>
 
 <br>
 
@@ -217,7 +217,7 @@ O título do PR referencia a task da branch:
 
 <br>
 
-<h2 align="center"><img src="https://api.iconify.design/tabler/shield-check.svg?color=%232D2D2D" width="20" /> Regras Importantes</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/shield-check.svg?color=%23FFFFFF" width="20" /> Regras Importantes</h2>
 
 <br>
 
