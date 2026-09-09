@@ -1,43 +1,89 @@
 # Backlog do Produto — GeoRural DataHub
 
-## Resumo por User Story
+## Product Backlog
 
-| User Story | Descrição resumida | Prioridade | Pontos |
-|---|---|---|---|
-| US1 | Cadastro de fonte e conjunto | Alta | 9 |
-| US2 | Ingestão na zona bruta | Alta | 54 |
-| US3 | Validação e envio à quarentena | Alta | 15 |
-| US4 | Tratamento e padronização | Alta | 12 |
-| US5 | Cruzamento geoespacial e cálculo | Alta | 26 |
-| US6 | Qualidade e versionamento imutável | Alta | 15 |
-| US7 | Publicação da versão | Alta | 14 |
-| US8 | Auditoria | Média | 11 |
-| US9 | Gestão de perfis de acesso | Média | 15 |
-| US10 | Monitoramento de infraestrutura | Baixa | 8 |
-| US11 | Consumo por portal e API | Alta | 14 |
-
-## Resumo por Prioridade
-
-| Prioridade | ID | User Story | Critério de Aceite | Status |
+| Rank | Prioridade | User Story | Estimativa | Sprint |
 |---|---|---|---|---|
-| Alta | US 1 | **Como** Operador de Dados **quero** cadastrar as fontes **para que** seja possivel realizar a validação dos mesmos | Fonte e conjunto cadastrados com campos obrigatórios preenchidos; sistema bloqueia cadastro incompleto. |:white_square_button: |
-| Alta | US 2 | **Como** Operador de Dados **quero** realizar a Ingestão na zona bruta **para que** tenha os dados brutos armazenados | Arquivo salvo na zona bruta com hash (SHA-256), data/hora e usuário registrados; formatos não suportados são rejeitados. | :white_square_button: |
-| Alta | US 3 | **Como** Operador de Dados **quero** validar os dados ingeridos e enviar os registros inconsistentes à quarentena **para que** apenas dados íntegros sigam para o tratamento | Registros inválidos (campos, tipos, duplicidades, geometrias) vão para quarentena com motivo registrado; válidos seguem para tratamento. | :white_square_button: |
-| Alta | US 4 | **Como** Operador de Dados **quero** tratar e padronizar os dados validados seguindo as regras do Geodatalake **para que** estejam prontos para o cruzamento geoespacial | Dados tratados e padronizados conforme regras do Geodatalake, com transformações aplicadas registradas para rastreabilidade. | :white_square_button: |
-| Alta | US 5 | **Como** Analista **quero** realizar o cruzamento dos dados geoespaciais e calcular **para que** consiga formular relatórios | Indicadores (ICV, IRL, IAPP, ISAP, IAE, IDesmat, IFC) calculados por imóvel, APP, RL e município a partir dos dados tratados. | :white_square_button: |
-| Alta | US 6 | **Como** Gestor **quero** avaliar a qualidade e versionamento imutável dos dados depurados **para que** seja considerados consistentes | Versão aprovada é registrada como imutável (hash, fonte, competência, parâmetros, regras); métricas de qualidade visíveis antes da aprovação. | :white_square_button: |
-| Alta | US 7 | **Como** Gestor **quero** realizar a publicação das versões **para que** seja possivel realizar as tomadas de decisões | Versão aprovada publicada como vigente, disponível via portal e API; versões anteriores continuam acessíveis. | :white_square_button: |
-| Alta | US 11 | **Como** Consumidor de Dados **quero** acessar os indicadores publicados via portal e via API **para que** eu possa utilizá-los em minhas análises e decisões. | Indicadores publicados acessíveis via portal (mapa, tabela, gráficos) e API, com resposta em até 3s na massa de homologação. | :white_square_button: |
-| Média | US 8 | **Como** Auditor **quero** ter acesso a todos os processos **para que** consiga fiscalizar e rastrear o tratamento do dado bruto ao produto final | Painel de auditoria exibe uploads, execuções, publicações, downloads e responsáveis, permitindo rastrear do dado bruto ao produto final. | :white_square_button: |
-| Média | US 9 | **Como** Administrador **quero** gerenciar os perfils de acesso dos usuarios **para que** cada um tenha permissões adequadas as suas responsabilidades | Administrador cria/edita usuários e atribui perfis (Operador, Analista, Gestor, Auditor, Administrador) com permissões correspondentes. | :white_square_button: |
-| Baixa | US 10 | **Como** Administrador **quero** monitora a saúde e disponibilidade da infraestrutura do Geodatalake **para que** o sistema esteja sempre operacional. | Painel exibe saúde de portal, APIs, GeoDataLake e Airflow, com consumo de recursos e alerta em caso de indisponibilidade. | :white_square_button: |
+| 1 | Alta | Como Operador de Dados, quero cadastrar as fontes de informação, para que seja possível organizá-las antes de serem usadas. | 8 | 1 |
+| 2 | Alta | Como Operador de Dados, quero enviar os arquivos de dados para o sistema, para que fiquem guardados com segurança antes de serem tratados. | 21 | 1 |
+| 3 | Alta | Como Operador de Dados, quero verificar se os dados enviados estão corretos e separar os que têm problema, para que só sigam adiante informações confiáveis. | 13 | 1 |
+| 4 | Alta | Como Operador de Dados, quero organizar e padronizar os dados já verificados, para que fiquem prontos para serem cruzados com outras informações. | 21 | 2 |
+| 5 | Alta | Como Analista, quero cruzar as informações de diferentes fontes e calcular os indicadores ambientais, para que consiga montar relatórios. | 34 | 2 |
+| 6 | Alta | Como Gestor, quero conferir a qualidade dos dados antes de aprová-los e guardar cada versão aprovada sem permitir alterações depois, para que os dados aprovados sejam sempre confiáveis. | 21 | 2 |
+| 7 | Alta | Como Gestor, quero divulgar as versões aprovadas dos dados, para que outras pessoas possam usá-las para tomar decisões. | 13 | 2 |
+| 8 | Alta | Como pessoa que usa os dados, quero acessar os indicadores já divulgados, para poder utilizá-los nas minhas análises e decisões. | 21 | 3 |
+| 9 | Média | Como Auditor, quero acompanhar tudo o que acontece com os dados, para conseguir verificar todo o caminho, desde a entrada até o resultado final. | 13 | 3 |
+| 10 | Média | Como Administrador, quero controlar quem pode acessar o quê no sistema, para que cada pessoa tenha acesso apenas ao que precisa para seu trabalho. | 13 | 3 |
+| 11 | Baixa | Como Administrador, quero acompanhar se o sistema está funcionando corretamente, para garantir que ele fique sempre disponível para uso. | 21 | 3 |
 
 ---
 
-## Resumo por Sprint
+## Critérios de Aceite por User Story
 
-| Sprint | Objetivo por Sprint |
+| ID | Critério de Aceite |
 |---|---|
-| Sprint 1 | Fluxo ponta a ponta mínimo funcionando: cadastro de fonte/conjunto, upload de arquivo com hash na zona bruta, validação básica com envio à quarentena, tratamento simplificado (gravação na zona tratada, sem reprojeção geoespacial ainda), criação e aprovação de versão, publicação e consulta básica via API retornando o dado publicado. Dá pra demonstrar um dado entrando no sistema e saindo publicado, de ponta a ponta. |
-| Sprint 2 | Pipeline de qualidade e cálculo dos indicadores: integração da biblioteca geoespacial (GDAL/GeoTools) e reprojeção real das geometrias, validações avançadas na quarentena (duplicidade/geometria) e reprocessamento, tratamento completo (dissolução de geometrias, rastreabilidade), cálculo de todos os indicadores ambientais (ICV, IRL, IAPP, ISAP, IAE, IDesmat, IFC), qualidade e comparação de versões, e melhorias no upload (métricas, preview, identificação de usuário). Dá pra demonstrar os indicadores sendo calculados de verdade a partir dos dados tratados. |
-| Sprint 3 | Produto pronto para homologação: orquestração via Airflow, tela de consulta pública (mapa, tabela, gráficos, exportação) e otimização de performance, auditoria completa, gestão de usuários/perfis de acesso, monitoramento de infraestrutura e documentação técnica. Dá pra demonstrar o sistema completo, seguro e monitorado, com o consumidor final acessando os indicadores. |
+| US1 | A fonte e o conjunto de dados são cadastrados com as informações obrigatórias preenchidas; o sistema não permite salvar um cadastro incompleto. |
+| US2 | O arquivo enviado fica registrado com a data, o horário e quem enviou; arquivos em formatos não aceitos são recusados. |
+| US3 | Registros com erro (campos faltando, duplicados, localização inválida) ficam separados com o motivo anotado; os corretos seguem para a próxima etapa. |
+| US4 | Os dados ficam padronizados conforme as regras definidas, e é possível saber quais alterações foram feitas em cada um. |
+| US5 | Todos os indicadores ambientais são calculados por propriedade e por município, com base nos dados organizados. |
+| US6 | Uma vez aprovada, a versão não pode mais ser alterada; antes de aprovar é possível ver informações sobre a qualidade dos dados. |
+| US7 | A versão aprovada fica disponível para consulta; versões antigas continuam acessíveis. |
+| US8 | É possível ver quem enviou, alterou, aprovou ou baixou cada informação, do início ao fim. |
+| US9 | O administrador consegue cadastrar pessoas e definir o que cada uma pode fazer no sistema. |
+| US10 | É possível ver se tudo está funcionando bem e receber um aviso caso algo pare de funcionar. |
+| US11 | Os indicadores divulgados podem ser consultados (em mapa, tabela ou gráfico) e baixados, com resposta rápida. |
+
+---
+
+## Sprint Backlog
+
+### Sprint 1
+
+| | |
+|---|---|
+| Capacidade estimada da Equipe por Sprint: | 42 Story Points |
+| **Meta da Sprint:** | **User Stories de rank 1, 2 e 3** |
+| Previsão da Sprint (extras, sem compromisso de entrega): | Nenhum item extra planejado para esta Sprint |
+
+| Rank | Prioridade | User Story | Estimativa | Sprint |
+|---|---|---|---|---|
+| 1 | Alta | Como Operador de Dados, quero cadastrar as fontes de informação, para que seja possível organizá-las antes de serem usadas. | 8 | 1 |
+| 2 | Alta | Como Operador de Dados, quero enviar os arquivos de dados para o sistema, para que fiquem guardados com segurança antes de serem tratados. | 21 | 1 |
+| 3 | Alta | Como Operador de Dados, quero verificar se os dados enviados estão corretos e separar os que têm problema, para que só sigam adiante informações confiáveis. | 13 | 1 |
+
+**Objetivo da Sprint:** Colocar as informações no sistema: cadastro das fontes, envio dos arquivos e uma primeira verificação para separar os dados corretos dos que têm problema.
+
+### Sprint 2
+
+| | |
+|---|---|
+| Capacidade estimada da Equipe por Sprint: | 89 Story Points |
+| **Meta da Sprint:** | **User Stories de rank 4, 5, 6 e 7** |
+| Previsão da Sprint (extras, sem compromisso de entrega): | Nenhum item extra planejado para esta Sprint |
+
+| Rank | Prioridade | User Story | Estimativa | Sprint |
+|---|---|---|---|---|
+| 4 | Alta | Como Operador de Dados, quero organizar e padronizar os dados já verificados, para que fiquem prontos para serem cruzados com outras informações. | 21 | 2 |
+| 5 | Alta | Como Analista, quero cruzar as informações de diferentes fontes e calcular os indicadores ambientais, para que consiga montar relatórios. | 34 | 2 |
+| 6 | Alta | Como Gestor, quero conferir a qualidade dos dados antes de aprová-los e guardar cada versão aprovada sem permitir alterações depois, para que os dados aprovados sejam sempre confiáveis. | 21 | 2 |
+| 7 | Alta | Como Gestor, quero divulgar as versões aprovadas dos dados, para que outras pessoas possam usá-las para tomar decisões. | 13 | 2 |
+
+**Objetivo da Sprint:** Preparar e calcular: organizar os dados verificados, calcular os indicadores ambientais e conferir a qualidade antes de aprovar cada versão.
+
+### Sprint 3
+
+| | |
+|---|---|
+| Capacidade estimada da Equipe por Sprint: | 68 Story Points |
+| **Meta da Sprint:** | **User Stories de rank 8, 9, 10 e 11** |
+| Previsão da Sprint (extras, sem compromisso de entrega): | Nenhum item extra planejado para esta Sprint |
+
+| Rank | Prioridade | User Story | Estimativa | Sprint |
+|---|---|---|---|---|
+| 8 | Alta | Como pessoa que usa os dados, quero acessar os indicadores já divulgados, para poder utilizá-los nas minhas análises e decisões. | 21 | 3 |
+| 9 | Média | Como Auditor, quero acompanhar tudo o que acontece com os dados, para conseguir verificar todo o caminho, desde a entrada até o resultado final. | 13 | 3 |
+| 10 | Média | Como Administrador, quero controlar quem pode acessar o quê no sistema, para que cada pessoa tenha acesso apenas ao que precisa para seu trabalho. | 13 | 3 |
+| 11 | Baixa | Como Administrador, quero acompanhar se o sistema está funcionando corretamente, para garantir que ele fique sempre disponível para uso. | 21 | 3 |
+
+**Objetivo da Sprint:** Deixar tudo pronto para uso: divulgar os dados aprovados, permitir consulta pelos usuários finais, acompanhar tudo o que acontece no sistema, controlar o acesso das pessoas e verificar se o sistema está funcionando bem.
