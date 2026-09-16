@@ -30,22 +30,31 @@
 
 <br>
 
-- [Sobre a Visiona](#-sobre-a-visiona)
-- [O Desafio](#-o-desafio)
-- [Área de Interesse](#-área-de-interesse)
-- [Objetivo e Fluxo Mínimo](#-objetivo-e-fluxo-mínimo)
-- [Escopo e Requisitos Funcionais](#-escopo-e-requisitos-funcionais)
-- [Indicadores Ambientais](#-indicadores-ambientais)
-- [Dados Necessários e Fontes](#-dados-necessários-e-fontes)
-- [Requisitos Não Funcionais](#-requisitos-não-funcionais)
-- [Entrega Esperada e Critério de Sucesso](#-entrega-esperada-e-critério-de-sucesso)
-- [Backlog do Produto](#-backlog-do-produto)
-- [Cronograma das Sprints](#-cronograma-das-sprints)
-- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-- [Como Executar o Projeto](#-como-executar-o-projeto)
-- [Documentação](#-documentação)
-- [Paleta de Cores do Projeto](#-paleta-de-cores-do-projeto)
-- [Equipe](#-equipe)
+<div align="center">
+
+<table>
+  <tr>
+    <td width="50%">
+      <img src="https://api.iconify.design/tabler/building-broadcast-tower.svg?color=%23FFFFFF" width="16" /> <a href="#-sobre-a-visiona">Sobre a Visiona</a><br><br>
+      <img src="https://api.iconify.design/tabler/target-arrow.svg?color=%23FFFFFF" width="16" /> <a href="#-o-desafio">O Desafio</a><br><br>
+      <img src="https://api.iconify.design/tabler/map-pin.svg?color=%23FFFFFF" width="16" /> <a href="#-área-de-interesse">Área de Interesse</a><br><br>
+      <img src="https://api.iconify.design/tabler/route.svg?color=%23FFFFFF" width="16" /> <a href="#-objetivo-e-fluxo-mínimo">Objetivo e Fluxo Mínimo</a><br><br>
+      <img src="https://api.iconify.design/tabler/list-check.svg?color=%23FFFFFF" width="16" /> <a href="#-escopo-e-requisitos-funcionais">Escopo e Requisitos Funcionais</a><br><br>
+      <img src="https://api.iconify.design/tabler/flag.svg?color=%23FFFFFF" width="16" /> <a href="#-entrega-esperada-e-critério-de-sucesso">Entrega Esperada e Critério de Sucesso</a><br><br>
+      <img src="https://api.iconify.design/tabler/clipboard-list.svg?color=%23FFFFFF" width="16" /> <a href="#-backlog-do-produto">Backlog do Produto</a>
+    </td>
+    <td width="50%">
+      <img src="https://api.iconify.design/tabler/calendar-time.svg?color=%23FFFFFF" width="16" /> <a href="#-cronograma-das-sprints">Cronograma das Sprints</a><br><br>
+      <img src="https://api.iconify.design/tabler/code.svg?color=%23FFFFFF" width="16" /> <a href="#-tecnologias-utilizadas">Tecnologias Utilizadas</a><br><br>
+      <img src="https://api.iconify.design/tabler/terminal-2.svg?color=%23FFFFFF" width="16" /> <a href="#-como-executar-o-projeto">Como Executar o Projeto</a><br><br>
+      <img src="https://api.iconify.design/tabler/file-text.svg?color=%23FFFFFF" width="16" /> <a href="#-documentação">Documentação</a><br><br>
+      <img src="https://api.iconify.design/tabler/palette.svg?color=%23FFFFFF" width="16" /> <a href="#-paleta-de-cores-do-projeto">Paleta de Cores do Projeto</a><br><br>
+      <img src="https://api.iconify.design/tabler/users.svg?color=%23FFFFFF" width="16" /> <a href="#-equipe">Equipe</a>
+    </td>
+  </tr>
+</table>
+
+</div>
 
 <br>
 
@@ -84,9 +93,9 @@ diferentes — sem gestão centralizada, o resultado não é auditável.
       <img width="60" height="3" src="https://placehold.co/60x3/FE5000/FE5000.png"/>
       <br><strong>CONTEXTO</strong><br><br>
       <sub>
-      <img src="https://api.iconify.design/tabler/map-2.svg?color=%23FFFFFF" width="16" /> <strong>Dados de imóveis rurais, APP e RL</strong> — limites vetoriais, uso e cobertura do solo e atributos cadastrais alimentam os indicadores<br><br>
-      <img src="https://api.iconify.design/tabler/stack-2.svg?color=%23FFFFFF" width="16" /> <strong>Múltiplas fontes, formatos e versões</strong> — cada origem tem competência, esquema e sistema de referência próprios<br><br>
-      <img src="https://api.iconify.design/tabler/chart-bar.svg?color=%23FFFFFF" width="16" /> <strong>Decisões dependem desses números</strong> — órgãos públicos e empresas usam os indicadores para planejar, fiscalizar e conceder crédito
+      <img src="https://api.iconify.design/tabler/map-2.svg?color=%23FFFFFF" width="16" /> <strong>Dados de imóveis rurais, APP e RL</strong> - limites vetoriais, uso e cobertura do solo e atributos cadastrais alimentam os indicadores<br><br>
+      <img src="https://api.iconify.design/tabler/stack-2.svg?color=%23FFFFFF" width="16" /> <strong>Múltiplas fontes, formatos e versões</strong> - cada origem tem competência, esquema e sistema de referência próprios<br><br>
+      <img src="https://api.iconify.design/tabler/chart-bar.svg?color=%23FFFFFF" width="16" /> <strong>Decisões dependem desses números</strong> - órgãos públicos e empresas usam os indicadores para planejar, fiscalizar e conceder crédito
       </sub>
     </td>
     <td align="center" width="50%">
@@ -150,10 +159,10 @@ ao indicador publicado e rastreável.
 
 **Objetivo do produto:**
 
-- [ ] **MVP em nuvem** — implantado na Oracle Cloud, com componentes operacionais;
-- [ ] **GeoDataLake acadêmico** — zonas bruta, tratada, publicada e quarentena sobre armazenamento de objetos;
-- [ ] **Indicadores calculados pela solução** — cruzamentos e cálculos por imóvel, APP, RL e município;
-- [ ] **Rastreabilidade ponta a ponta** — do resultado até os dados, os parâmetros e a regra aplicada.
+- [ ] **MVP em nuvem** - implantado na Oracle Cloud, com componentes operacionais;
+- [ ] **GeoDataLake acadêmico** - zonas bruta, tratada, publicada e quarentena sobre armazenamento de objetos;
+- [ ] **Indicadores calculados pela solução** - cruzamentos e cálculos por imóvel, APP, RL e município;
+- [ ] **Rastreabilidade ponta a ponta** - do resultado até os dados, os parâmetros e a regra aplicada.
 
 <br>
 
@@ -186,7 +195,7 @@ ao indicador publicado e rastreável.
 
 <br>
 
-Escopo funcional mínimo do MVP — tudo disponível pelo portal e pelas APIs, sob controle de acesso.
+Escopo funcional mínimo do MVP - tudo disponível pelo portal e pelas APIs, sob controle de acesso.
 
 <br>
 
@@ -217,107 +226,6 @@ Escopo funcional mínimo do MVP — tudo disponível pelo portal e pelas APIs, s
 
 <br>
 
-<h2 align="center"><img src="https://api.iconify.design/tabler/leaf.svg?color=%23FFFFFF" width="20" /> Indicadores Ambientais</h2>
-
-<br>
-
-Sete indicadores simples, calculados pela própria solução a partir do imóvel, da APP, da RL e das demais
-camadas do catálogo. Cada indicador é rastreável até a fonte, a versão dos dados e a regra de cálculo aplicada.
-
-<br>
-
-<div align="center">
-
-| Indicador | O que mede |
-| --- | --- |
-| **ICV** · Cobertura vegetal nativa | Área de vegetação nativa ÷ área do imóvel, em % e em hectares |
-| **IRL** · Reserva Legal | Área de RL ÷ área do imóvel, comparada ao mínimo do bioma; déficit ou excedente em hectares |
-| **IAPP** · APP conservada | Área de APP com vegetação nativa ÷ APP total do imóvel; passivo a recuperar em hectares |
-| **ISAP** · Áreas protegidas | Sobreposição do imóvel com unidades de conservação, terras indígenas, quilombolas e florestas públicas |
-| **IAE** · Área embargada | Sobreposição do imóvel com os embargos ambientais federais, em % e em hectares |
-| **IDesmat** · Desmatamento | Área (ha) e % de sobreposição do imóvel com a supressão a partir de 22/07/2008, 31/07/2019 e 31/12/2020 |
-| **IFC** · Focos de calor | Focos detectados dentro do imóvel ÷ área do imóvel × 1.000 hectares |
-
-</div>
-
-<br>
-
-> *Regras de cálculo: áreas em projeção equivalente, geometrias validadas e dissolvidas, totais consistentes e agregação por município.*
-
-<br>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
-
-<br>
-
-<h2 align="center"><img src="https://api.iconify.design/tabler/database.svg?color=%23FFFFFF" width="20" /> Dados Necessários e Fontes</h2>
-
-<br>
-
-Camadas de entrada que a solução precisa ingerir para calcular os sete indicadores.
-
-<br>
-
-<div align="center">
-
-| Dado necessário | Fonte | Abrangência | Formatos de origem | Indicadores |
-| --- | :---: | :---: | --- | :---: |
-| Imóvel rural (perímetro) | CAR | Nacional | .shp, .gpkg | Todos |
-| APP declarada | CAR | Nacional | .shp, .geojson | IAPP, ICV |
-| Reserva Legal declarada | CAR | Nacional | .shp, .geojson | IRL |
-| Vegetação nativa | CAR | Nacional | .tif, .shp | ICV, IAPP |
-| Limites de biomas | IBGE | Nacional | .shp | IRL |
-| Áreas protegidas e territórios especiais | ICMBio, MMA, FUNAI, INCRA, SFB | Nacional | .shp | ISAP |
-| Embargos ambientais | IBAMA, ICMBio | Nacional | .shp, .csv | IAE |
-| Desmatamento | INPE (PRODES) | Por bioma, anual | .shp, .geojson | IDesmat |
-| Focos de calor | INPE (Queimadas) | Nacional, diário | .csv, .shp | IFC |
-| Malha municipal | IBGE | Nacional | .shp | Agregação |
-
-</div>
-
-<br>
-
-> *O arquivo original de cada fonte é preservado na zona bruta com hash e metadados; as camadas são reprojetadas para projeção equivalente antes do cálculo de área.*
-
-<br>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
-
-<br>
-
-<h2 align="center"><img src="https://api.iconify.design/tabler/settings.svg?color=%23FFFFFF" width="20" /> Requisitos Não Funcionais</h2>
-
-<br>
-
-Tecnologias do semestre e atributos de qualidade que serão avaliados no projeto.
-
-<br>
-
-<div align="center">
-
-| Requisito | Descrição |
-| --- | --- |
-| <img src="https://api.iconify.design/tabler/device-mobile.svg?color=%23FFFFFF" width="16" /> Stack da aplicação | Java com Spring Boot, APIs REST, JPA/Hibernate e Spring Security; Vue.js com Axios, Leaflet e biblioteca de gráficos |
-| <img src="https://api.iconify.design/tabler/database.svg?color=%23FFFFFF" width="16" /> Núcleo relacional Oracle | Transações, constraints, índices, views e rotinas PL/SQL, com conexão segura ao ambiente de nuvem |
-| <img src="https://api.iconify.design/tabler/cloud.svg?color=%23FFFFFF" width="16" /> GeoDataLake e orquestração em nuvem | Armazenamento de objetos nas quatro zonas e DAGs do Airflow em serviço gerenciado ou container equivalente |
-| <img src="https://api.iconify.design/tabler/stack-2.svg?color=%23FFFFFF" width="16" /> Versões imutáveis e reprodutíveis | Identificadas por hash, fonte, competência, execução, parâmetros, regras e transformações aplicadas |
-| <img src="https://api.iconify.design/tabler/shield-lock.svg?color=%23FFFFFF" width="16" /> Segurança e menor privilégio | Autenticação e autorização por perfil em telas, APIs e downloads; segredos fora do código; dados sintéticos ou anonimizados |
-| <img src="https://api.iconify.design/tabler/bolt.svg?color=%23FFFFFF" width="16" /> Desempenho e disponibilidade | Consultas usuais em até 3 segundos na massa de homologação, com logs, estado de saúde e consumo de recursos visíveis |
-| <img src="https://api.iconify.design/tabler/file-text.svg?color=%23FFFFFF" width="16" /> Documentação e testes | Arquitetura, modelo e dicionário de dados, OpenAPI/Swagger, DAGs e memória de cálculo; testes de unidade, integração e pipeline |
-| <img src="https://api.iconify.design/tabler/rocket.svg?color=%23FFFFFF" width="16" /> Ambiente de nuvem | Portal, APIs, GeoDataLake e Airflow implantados e acessíveis durante a avaliação, na **Oracle Cloud** |
-
-</div>
-
-<br>
-
-> *As tecnologias ensinadas no semestre são requisitos não funcionais avaliados.*
-
-<br>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
-
-<br>
-
 <h2 align="center"><img src="https://api.iconify.design/tabler/flag.svg?color=%23FFFFFF" width="20" /> Entrega Esperada e Critério de Sucesso</h2>
 
 <br>
@@ -334,10 +242,10 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
       <img width="60" height="3" src="https://placehold.co/60x3/FE5000/FE5000.png"/>
       <br><strong>ENTREGAS PRINCIPAIS</strong><br><br>
       <sub>
-      <img src="https://api.iconify.design/tabler/chart-bar.svg?color=%23FFFFFF" width="16" /> <strong>Aplicação web em nuvem</strong> — catálogo, mapas, tabelas, gráficos, comparação de versões, downloads e painel do Airflow<br><br>
-      <img src="https://api.iconify.design/tabler/stack-2.svg?color=%23FFFFFF" width="16" /> <strong>Plataforma de dados integrada</strong> — Oracle, GeoDataLake, DAGs, APIs documentadas, cálculo analítico, fila de rejeitados, versionamento, qualidade, linhagem e auditoria<br><br>
-      <img src="https://api.iconify.design/tabler/file-text.svg?color=%23FFFFFF" width="16" /> <strong>Documentação e testes</strong> — código-fonte, modelo e dicionário de dados, scripts PL/SQL, memória de cálculo, arquitetura, manuais e relatório técnico<br><br>
-      <img src="https://api.iconify.design/tabler/flag-check.svg?color=%23FFFFFF" width="16" /> <strong>Demonstração do fluxo completo</strong> — da ingestão do arquivo até o resultado publicado e consultado
+      <img src="https://api.iconify.design/tabler/chart-bar.svg?color=%23FFFFFF" width="16" /> <strong>Aplicação web em nuvem</strong> - catálogo, mapas, tabelas, gráficos, comparação de versões, downloads e painel do Airflow<br><br>
+      <img src="https://api.iconify.design/tabler/stack-2.svg?color=%23FFFFFF" width="16" /> <strong>Plataforma de dados integrada</strong> - Oracle, GeoDataLake, DAGs, APIs documentadas, cálculo analítico, fila de rejeitados, versionamento, qualidade, linhagem e auditoria<br><br>
+      <img src="https://api.iconify.design/tabler/file-text.svg?color=%23FFFFFF" width="16" /> <strong>Documentação e testes</strong> - código-fonte, modelo e dicionário de dados, scripts PL/SQL, memória de cálculo, arquitetura, manuais e relatório técnico<br><br>
+      <img src="https://api.iconify.design/tabler/flag-check.svg?color=%23FFFFFF" width="16" /> <strong>Demonstração do fluxo completo</strong> - da ingestão do arquivo até o resultado publicado e consultado
       </sub>
     </td>
     <td align="center" width="50%">
@@ -366,7 +274,7 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
 
 <br>
 
-<h2 align="center"><img src="https://api.iconify.design/tabler/clipboard-list.svg?color=%%23FFFFFF" width="20" /> Backlog do Produto</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/clipboard-list.svg?color=%23FFFFFF" width="20" /> Backlog do Produto</h2>
 
 <br>
 
