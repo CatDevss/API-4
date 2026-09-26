@@ -43,9 +43,9 @@ CREATE TABLE IF NOT EXISTS arquivo (
     ver_id          NUMBER NOT NULL,
     arq_nome        VARCHAR2(100),
     arq_formato     VARCHAR2(10),
-    arq_tamanho     NUMBER (19,0) NOT NULL,
-    arq_hash        VARCHAR2(100) NOT NULL,
-    arq_localizacao VARCHAR2(200) NOT NULL
+    arq_tamanho     NUMBER(19, 0) NOT NULL,
+    arq_hash        VARCHAR2(300) NOT NULL,
+    arq_localizacao VARCHAR2(500) NOT NULL
 );
 
 CREATE TABLE IF NOT EXISTS auditoria (
@@ -118,6 +118,32 @@ ALTER TABLE quarentena
 ALTER TABLE quarentena
     ADD CONSTRAINT fk_quarentena_usuario FOREIGN KEY ( usr_id )
         REFERENCES usuario ( usr_id );
+
+CREATE OR REPLACE TRIGGER trg_valida_tipo_fonte_usr BEFORE
+    INSERT OR UPDATE ON fonte
+    FOR EACH ROW
+DECLARE
+    v_usr_tipo usuario.usr_tipo%TYPE;
+BEGIN
+    -- Busca o tipo do usuário que está realizando a operação
+    SELECT
+        usr_tipo
+    INTO v_usr_tipo
+    FROM
+        usuario
+    WHERE
+        usr_id = :new.usr_id;
+
+    -- Verifica se o tipo é permitido
+    IF v_usr_tipo NOT IN ( 'ADMIN', 'GESTOR' ) THEN
+        raise_application_error(-20001, 'Apenas usuários ADMIN ou GESTOR podem criar ou alterar fontes.');
+    END IF;
+
+EXCEPTION
+    WHEN no_data_found THEN
+        raise_application_error(-20002, 'O usuário informado não existe.');
+END;
+/
 
 COMMENT ON COLUMN usuario.usr_tipo IS
     'ADMIN, OPERADOR, ANALISTA, GESTOR, AUDITOR';
