@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS arquivo (
     ver_id          NUMBER NOT NULL,
     arq_nome        VARCHAR2(100),
     arq_formato     VARCHAR2(10),
-    arq_tamanho     NUMBER NOT NULL,
+    arq_tamanho     NUMBER (19,0) NOT NULL,
     arq_hash        VARCHAR2(100) NOT NULL,
     arq_localizacao VARCHAR2(200) NOT NULL
 );
