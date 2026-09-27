@@ -21,12 +21,13 @@
 
 <br>
 
-Pipeline de qualidade e cálculo dos indicadores: integração da biblioteca geoespacial (GDAL/GeoTools) e
-reprojeção real das geometrias, validações avançadas na quarentena (duplicidade/geometria) e reprocessamento,
-tratamento completo (dissolução de geometrias, rastreabilidade), cálculo de todos os indicadores ambientais
-(ICV, IRL, IAPP, ISAP, IAE, IDesmat, IFC), qualidade e comparação de versões, e melhorias no upload (métricas,
-preview, identificação de usuário). Dá pra demonstrar os indicadores sendo calculados de verdade a partir dos
-dados tratados.
+Validação e quarentena (remanejada da Sprint 1), pipeline de qualidade e cálculo dos indicadores: validação
+básica dos dados ingeridos com envio à quarentena, integração da biblioteca geoespacial (GDAL/GeoTools) e
+reprojeção real das geometrias, tratamento completo (dissolução de geometrias, rastreabilidade), cálculo de
+todos os indicadores ambientais (ICV, IRL, IAPP, ISAP, IAE, IDesmat, IFC), e qualidade e aprovação de versões.
+A publicação (US7), antes prevista aqui, ficou para a Sprint 3, pois começou junto com US6 e precisa terminar
+na mesma sprint em que começar. Dá pra demonstrar o fluxo completo desde a validação até os indicadores
+sendo calculados de verdade a partir dos dados tratados, com a versão pronta para aprovação.
 
 <br>
 
@@ -40,7 +41,6 @@ dados tratados.
 
 | ID | Prioridade | História de Usuário | Critério de Aceite |
 |:---:|:---:|---|---|
-| US2 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Operador de Dados quero realizar a ingestão na zona bruta para que tenha os dados brutos armazenados | Arquivo salvo na zona bruta com hash (SHA-256), data/hora e usuário registrados; formatos não suportados são rejeitados. |
 | US3 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Operador de Dados quero validar os dados ingeridos e enviar os registros inconsistentes à quarentena para que apenas dados íntegros sigam para o tratamento | Registros inválidos (campos, tipos, duplicidades, geometrias) vão para quarentena com motivo registrado; válidos seguem para tratamento. |
 | US4 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Operador de Dados quero tratar e padronizar os dados validados seguindo as regras do GeoDataLake para que estejam prontos para o cruzamento geoespacial | Dados tratados e padronizados conforme regras do GeoDataLake, com transformações aplicadas registradas para rastreabilidade. |
 | US5 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Analista quero realizar o cruzamento dos dados geoespaciais e calcular para formular relatórios | Indicadores (ICV, IRL, IAPP, ISAP, IAE, IDesmat, IFC) calculados por imóvel, APP, RL e município a partir dos dados tratados. |
