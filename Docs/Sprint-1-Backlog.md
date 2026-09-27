@@ -21,10 +21,10 @@
 
 <br>
 
-Fluxo ponta a ponta mínimo funcionando: cadastro de fonte/conjunto, upload de arquivo com hash na zona bruta,
-validação básica com envio à quarentena, tratamento simplificado (gravação na zona tratada, sem reprojeção
-geoespacial ainda), criação e aprovação de versão, publicação e consulta básica via API retornando o dado
-publicado. Dá pra demonstrar um dado entrando no sistema e saindo publicado, de ponta a ponta.
+Cadastro de fonte, criação de conjunto e upload de arquivo com hash na zona bruta. A validação com envio à
+quarentena (antes prevista aqui) foi remanejada para a Sprint 2 — não daria tempo de entregar as três User
+Stories com qualidade nesta sprint. Dá pra demonstrar um dado entrando no sistema e ficando armazenado na
+zona bruta, de forma rastreável.
 
 <br>
 
@@ -38,13 +38,8 @@ publicado. Dá pra demonstrar um dado entrando no sistema e saindo publicado, de
 
 | ID | Prioridade | História de Usuário | Critério de Aceite |
 |:---:|:---:|---|---|
-| US1 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Operador de Dados quero cadastrar as fontes para que seja possível realizar a validação dos mesmos | Fonte e conjunto cadastrados com campos obrigatórios preenchidos; sistema bloqueia cadastro incompleto. |
-| US2 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Operador de Dados quero realizar a ingestão na zona bruta para que tenha os dados brutos armazenados | Arquivo salvo na zona bruta com hash (SHA-256), data/hora e usuário registrados; formatos não suportados são rejeitados. |
-| US3 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Operador de Dados quero validar os dados ingeridos e enviar os registros inconsistentes à quarentena para que apenas dados íntegros sigam para o tratamento | Registros inválidos (campos, tipos, duplicidades, geometrias) vão para quarentena com motivo registrado; válidos seguem para tratamento. |
-| US4 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Operador de Dados quero tratar e padronizar os dados validados seguindo as regras do GeoDataLake para que estejam prontos para o cruzamento geoespacial | Dados tratados e padronizados conforme regras do GeoDataLake, com transformações aplicadas registradas para rastreabilidade. |
-| US6 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Gestor quero avaliar a qualidade e versionamento imutável dos dados depurados para que sejam considerados consistentes | Versão aprovada é registrada como imutável (hash, fonte, competência, parâmetros, regras); métricas de qualidade visíveis antes da aprovação. |
-| US7 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Gestor quero realizar a publicação das versões para que seja possível realizar as tomadas de decisões | Versão aprovada publicada como vigente, disponível via portal e API; versões anteriores continuam acessíveis. |
-| US11 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Consumidor de Dados quero acessar os indicadores publicados via portal e via API para que eu possa utilizá-los em minhas análises e decisões | Indicadores publicados acessíveis via portal (mapa, tabela, gráficos) e API, com resposta em até 3s na massa de homologação. |
+| US1 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Gestor quero cadastrar as fontes de dados para que o Operador possa criar conjuntos a partir delas | Fonte cadastrada com campos obrigatórios preenchidos; sistema bloqueia cadastro incompleto. |
+| US2 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Operador de Dados quero criar conjuntos e realizar a ingestão na zona bruta para que tenha os dados brutos armazenados | Conjunto criado a partir de uma fonte cadastrada; arquivo salvo na zona bruta com hash (SHA-256), data/hora e usuário registrados; formatos não suportados são rejeitados. |
 
 <br>
 
