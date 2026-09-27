@@ -24,11 +24,11 @@
 | 4 | US4 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Operador de Dados, quero organizar e padronizar os dados já verificados, para que fiquem prontos para serem cruzados com outras informações. | 21 | 2 |
 | 5 | US5 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Analista, quero cruzar as informações de diferentes fontes e calcular os indicadores ambientais, para que consiga montar relatórios. | 34 | 2 |
 | 6 | US6 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Gestor, quero conferir a qualidade dos dados antes de aprová-los e guardar cada versão aprovada sem permitir alterações depois, para que os dados aprovados sejam sempre confiáveis. | 21 | 2 |
-| 7 | US7 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Gestor, quero divulgar as versões aprovadas dos dados, para que outras pessoas possam usá-las para tomar decisões. | 13 | 2 |
-| 8 | US11 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Consumidor de Dados, quero acessar os indicadores já divulgados, para poder utilizá-los nas minhas análises e decisões. | 21 | 3 |
-| 9 | US8 | ![Média](https://img.shields.io/badge/Média-FFA300?style=flat-square&logoColor=2D2D2D) | Como Auditor, quero acompanhar tudo o que acontece com os dados, para conseguir verificar todo o caminho, desde a entrada até o resultado final. | 13 | 3 |
-| 10 | US9 | ![Média](https://img.shields.io/badge/Média-FFA300?style=flat-square&logoColor=2D2D2D) | Como Administrador, quero controlar quem pode acessar o quê no sistema, para que cada pessoa tenha acesso apenas ao que precisa para seu trabalho. | 13 | 3 |
-| 11 | US10 | ![Baixa](https://img.shields.io/badge/Baixa-808080?style=flat-square&logoColor=white) | Como Administrador, quero acompanhar se o sistema está funcionando corretamente, para garantir que ele fique sempre disponível para uso. | 21 | 3 |
+| 7 | US7 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Gestor, quero divulgar as versões aprovadas dos dados, para que outras pessoas possam usá-las para tomar decisões. | 13 | 3 |
+| 8 | US8 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Consumidor de Dados, quero acessar os indicadores já divulgados, para poder utilizá-los nas minhas análises e decisões. | 21 | 3 |
+| 9 | US9 | ![Média](https://img.shields.io/badge/Média-FFA300?style=flat-square&logoColor=2D2D2D) | Como Auditor, quero acompanhar tudo o que acontece com os dados, para conseguir verificar todo o caminho, desde a entrada até o resultado final. | 13 | 3 |
+| 10 | US10 | ![Média](https://img.shields.io/badge/Média-FFA300?style=flat-square&logoColor=2D2D2D) | Como Administrador, quero controlar quem pode acessar o quê no sistema, para que cada pessoa tenha acesso apenas ao que precisa para seu trabalho. | 13 | 3 |
+| 11 | US11 | ![Baixa](https://img.shields.io/badge/Baixa-808080?style=flat-square&logoColor=white) | Como Administrador, quero acompanhar se o sistema está funcionando corretamente, para garantir que ele fique sempre disponível para uso. | 21 | 3 |
 
 <br>
 
@@ -49,10 +49,10 @@
 | US5 | Todos os indicadores ambientais são calculados por propriedade e por município, com base nos dados organizados. |
 | US6 | Uma vez aprovada, a versão não pode mais ser alterada; antes de aprovar é possível ver informações sobre a qualidade dos dados. |
 | US7 | A versão aprovada fica disponível para consulta; versões antigas continuam acessíveis. |
-| US8 | É possível ver quem enviou, alterou, aprovou ou baixou cada informação, do início ao fim. |
-| US9 | O administrador consegue cadastrar pessoas e definir o que cada uma pode fazer no sistema. |
-| US10 | É possível ver se tudo está funcionando bem e receber um aviso caso algo pare de funcionar. |
-| US11 | Os indicadores divulgados podem ser consultados (em mapa, tabela ou gráfico) e baixados, com resposta rápida. |
+| US8 | Os indicadores divulgados podem ser consultados (em mapa, tabela ou gráfico) e baixados, com resposta rápida. |
+| US9 | É possível ver quem enviou, alterou, aprovou ou baixou cada informação, do início ao fim. |
+| US10 | O administrador consegue cadastrar pessoas e definir o que cada uma pode fazer no sistema. |
+| US11 | É possível ver se tudo está funcionando bem e receber um aviso caso algo pare de funcionar. |
 
 <br>
 
@@ -119,7 +119,7 @@
       <br><strong>CAPACIDADE E META</strong><br><br>
       <sub>
       Capacidade estimada da equipe: <strong>89 Story Points</strong><br><br>
-      Meta da sprint: <strong>User Stories US3, US4, US5, US6 e US7</strong><br><br>
+      Meta da sprint: <strong>User Stories US3, US4, US5 e US6</strong><br><br>
       Previsão de extras: nenhum item extra planejado
       </sub>
     </td>
@@ -143,7 +143,6 @@
 | US4 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Operador de Dados, quero organizar e padronizar os dados já verificados, para que fiquem prontos para serem cruzados com outras informações. | 21 |
 | US5 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Analista, quero cruzar as informações de diferentes fontes e calcular os indicadores ambientais, para que consiga montar relatórios. | 34 |
 | US6 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Gestor, quero conferir a qualidade dos dados antes de aprová-los e guardar cada versão aprovada sem permitir alterações depois, para que os dados aprovados sejam sempre confiáveis. | 21 |
-| US7 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Gestor, quero divulgar as versões aprovadas dos dados, para que outras pessoas possam usá-las para tomar decisões. | 13 |
 
 <br>
 
@@ -164,7 +163,7 @@
       <br><strong>CAPACIDADE E META</strong><br><br>
       <sub>
       Capacidade estimada da equipe: <strong>68 Story Points</strong><br><br>
-      Meta da sprint: <strong>User Stories US8, US9, US10 e US11</strong><br><br>
+      Meta da sprint: <strong>User Stories US7, US8, US9, US10 e US11</strong><br><br>
       Previsão de extras: nenhum item extra planejado
       </sub>
     </td>
@@ -172,7 +171,7 @@
       <img width="60" height="3" src="https://placehold.co/60x3/FFA300/FFA300.png"/>
       <br><strong>OBJETIVO DA SPRINT</strong><br><br>
       <sub>
-      Deixar tudo pronto para uso: divulgar os dados aprovados, permitir consulta pelos usuários finais, acompanhar tudo o que acontece no sistema, controlar o acesso das pessoas e verificar se o sistema está funcionando bem.
+      Deixar tudo pronto para uso: publicar os dados aprovados, permitir consulta pelos usuários finais, acompanhar tudo o que acontece no sistema, controlar o acesso das pessoas e verificar se o sistema está funcionando bem.
       </sub>
     </td>
   </tr>
@@ -184,10 +183,11 @@
 
 | ID | Prioridade | User Story | Estimativa |
 |:---:|:---:|---|:---:|
-| US11 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Consumidor de Dados, quero acessar os indicadores já divulgados, para poder utilizá-los nas minhas análises e decisões. | 21 |
-| US8 | ![Média](https://img.shields.io/badge/Média-FFA300?style=flat-square&logoColor=2D2D2D) | Como Auditor, quero acompanhar tudo o que acontece com os dados, para conseguir verificar todo o caminho, desde a entrada até o resultado final. | 13 |
-| US9 | ![Média](https://img.shields.io/badge/Média-FFA300?style=flat-square&logoColor=2D2D2D) | Como Administrador, quero controlar quem pode acessar o quê no sistema, para que cada pessoa tenha acesso apenas ao que precisa para seu trabalho. | 13 |
-| US10 | ![Baixa](https://img.shields.io/badge/Baixa-808080?style=flat-square&logoColor=white) | Como Administrador, quero acompanhar se o sistema está funcionando corretamente, para garantir que ele fique sempre disponível para uso. | 21 |
+| US7 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Gestor, quero divulgar as versões aprovadas dos dados, para que outras pessoas possam usá-las para tomar decisões. | 13 |
+| US8 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Consumidor de Dados, quero acessar os indicadores já divulgados, para poder utilizá-los nas minhas análises e decisões. | 21 |
+| US9 | ![Média](https://img.shields.io/badge/Média-FFA300?style=flat-square&logoColor=2D2D2D) | Como Auditor, quero acompanhar tudo o que acontece com os dados, para conseguir verificar todo o caminho, desde a entrada até o resultado final. | 13 |
+| US10 | ![Média](https://img.shields.io/badge/Média-FFA300?style=flat-square&logoColor=2D2D2D) | Como Administrador, quero controlar quem pode acessar o quê no sistema, para que cada pessoa tenha acesso apenas ao que precisa para seu trabalho. | 13 |
+| US11 | ![Baixa](https://img.shields.io/badge/Baixa-808080?style=flat-square&logoColor=white) | Como Administrador, quero acompanhar se o sistema está funcionando corretamente, para garantir que ele fique sempre disponível para uso. | 21 |
 
 <br>
 
