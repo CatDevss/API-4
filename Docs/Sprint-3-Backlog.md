@@ -21,10 +21,11 @@
 
 <br>
 
-Produto pronto para homologação: orquestração via Airflow, tela de consulta pública (mapa, tabela, gráficos,
-exportação) e otimização de performance, auditoria completa, gestão de usuários/perfis de acesso, monitoramento
-de infraestrutura e documentação técnica. Dá pra demonstrar o sistema completo, seguro e monitorado, com o
-consumidor final acessando os indicadores.
+Produto pronto para homologação: publicação das versões aprovadas (remanejada da Sprint 2, pois precisa
+terminar na mesma sprint em que começa), orquestração via Airflow, tela de consulta pública (mapa, tabela,
+gráficos, exportação) e otimização de performance, auditoria completa, gestão de usuários/perfis de acesso,
+monitoramento de infraestrutura e documentação técnica. Dá pra demonstrar o sistema completo, seguro e
+monitorado, com o consumidor final acessando os indicadores.
 
 <br>
 
@@ -39,10 +40,10 @@ consumidor final acessando os indicadores.
 | ID | Prioridade | História de Usuário | Critério de Aceite |
 |:---:|:---:|---|---|
 | US7 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Gestor quero realizar a publicação das versões para que seja possível realizar as tomadas de decisões | Versão aprovada publicada como vigente, disponível via portal e API; versões anteriores continuam acessíveis. |
-| US8 | ![Média](https://img.shields.io/badge/Média-FFA300?style=flat-square&logoColor=2D2D2D) | Como Auditor quero ter acesso a todos os processos para que consiga fiscalizar e rastrear o tratamento do dado bruto ao produto final | Painel de auditoria exibe uploads, execuções, publicações, downloads e responsáveis, permitindo rastrear do dado bruto ao produto final. |
-| US9 | ![Média](https://img.shields.io/badge/Média-FFA300?style=flat-square&logoColor=2D2D2D) | Como Administrador quero gerenciar os perfis de acesso dos usuários para que cada um tenha permissões adequadas às suas responsabilidades | Administrador cria/edita usuários e atribui perfis (Operador, Analista, Gestor, Auditor, Administrador) com permissões correspondentes. |
-| US10 | ![Baixa](https://img.shields.io/badge/Baixa-808080?style=flat-square&logoColor=white) | Como Administrador quero monitorar a saúde e disponibilidade da infraestrutura do GeoDataLake para que o sistema esteja sempre operacional | Painel exibe saúde de portal, APIs, GeoDataLake e Airflow, com consumo de recursos e alerta em caso de indisponibilidade. |
-| US11 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Consumidor de Dados quero acessar os indicadores publicados via portal e via API para que eu possa utilizá-los em minhas análises e decisões | Indicadores publicados acessíveis via portal (mapa, tabela, gráficos) e API, com resposta em até 3s na massa de homologação. |
+| US8 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Consumidor de Dados quero acessar os indicadores publicados via portal e via API para que eu possa utilizá-los em minhas análises e decisões | Indicadores publicados acessíveis via portal (mapa, tabela, gráficos) e API, com resposta em até 3s na massa de homologação. |
+| US9 | ![Média](https://img.shields.io/badge/Média-FFA300?style=flat-square&logoColor=2D2D2D) | Como Auditor quero ter acesso a todos os processos para que consiga fiscalizar e rastrear o tratamento do dado bruto ao produto final | Painel de auditoria exibe uploads, execuções, publicações, downloads e responsáveis, permitindo rastrear do dado bruto ao produto final. |
+| US10 | ![Média](https://img.shields.io/badge/Média-FFA300?style=flat-square&logoColor=2D2D2D) | Como Administrador quero gerenciar os perfis de acesso dos usuários para que cada um tenha permissões adequadas às suas responsabilidades | Administrador cria/edita usuários e atribui perfis (Operador, Analista, Gestor, Auditor, Administrador) com permissões correspondentes. |
+| US11 | ![Baixa](https://img.shields.io/badge/Baixa-808080?style=flat-square&logoColor=white) | Como Administrador quero monitorar a saúde e disponibilidade da infraestrutura do GeoDataLake para que o sistema esteja sempre operacional | Painel exibe saúde de portal, APIs, GeoDataLake e Airflow, com consumo de recursos e alerta em caso de indisponibilidade. |
 
 <br>
 
