@@ -18,9 +18,9 @@
 
 | Rank | ID | Prioridade | User Story | Estimativa | Sprint |
 |:---:|:---:|:---:|---|:---:|:---:|
-| 1 | US1 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Gestor, quero cadastrar as fontes de dados, para que o Operador possa criar conjuntos a partir delas. | 8 | 1 |
-| 2 | US2 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Operador de Dados, quero criar conjuntos e enviar os arquivos de dados para o sistema, para que fiquem guardados com segurança antes de serem tratados. | 21 | 1 |
-| 3 | US3 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Operador de Dados, quero verificar se os dados enviados estão corretos e separar os que têm problema, para que só sigam adiante informações confiáveis. | 13 | 2 |
+| 1 | US1 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Gestor, quero cadastrar as fontes de dados, para que o Operador possa criar conjuntos a partir delas. | 21 | 1 |
+| 2 | US2 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Operador de Dados, quero criar conjuntos e enviar os arquivos de dados para o sistema, para que fiquem guardados com segurança antes de serem tratados. | 63 | 1 |
+| 3 | US3 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Operador de Dados, quero verificar se os dados enviados estão corretos e separar os que têm problema, para que só sigam adiante informações confiáveis. | 28 | 2 |
 | 4 | US4 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Operador de Dados, quero organizar e padronizar os dados já verificados, para que fiquem prontos para serem cruzados com outras informações. | 21 | 2 |
 | 5 | US5 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Analista, quero cruzar as informações de diferentes fontes e calcular os indicadores ambientais, para que consiga montar relatórios. | 34 | 2 |
 | 6 | US6 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Gestor, quero conferir a qualidade dos dados antes de aprová-los e guardar cada versão aprovada sem permitir alterações depois, para que os dados aprovados sejam sempre confiáveis. | 21 | 2 |
@@ -76,7 +76,7 @@
       <img width="60" height="3" src="https://placehold.co/60x3/FE5000/FE5000.png"/>
       <br><strong>CAPACIDADE E META</strong><br><br>
       <sub>
-      Capacidade estimada da equipe: <strong>42 Story Points</strong><br><br>
+      Capacidade estimada da equipe: <strong>84 Story Points</strong><br><br>
       Meta da sprint: <strong>User Stories US1 e US2</strong><br><br>
       Previsão de extras: nenhum item extra planejado
       </sub>
@@ -97,8 +97,8 @@
 
 | ID | Prioridade | User Story | Estimativa |
 |:---:|:---:|---|:---:|
-| US1 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Gestor, quero cadastrar as fontes de dados, para que o Operador possa criar conjuntos a partir delas. | 8 |
-| US2 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Operador de Dados, quero criar conjuntos e enviar os arquivos de dados para o sistema, para que fiquem guardados com segurança antes de serem tratados. | 21 |
+| US1 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Gestor, quero cadastrar as fontes de dados, para que o Operador possa criar conjuntos a partir delas. | 21 |
+| US2 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Operador de Dados, quero criar conjuntos e enviar os arquivos de dados para o sistema, para que fiquem guardados com segurança antes de serem tratados. | 63 |
 
 <br>
 
@@ -118,7 +118,7 @@
       <img width="60" height="3" src="https://placehold.co/60x3/FE5000/FE5000.png"/>
       <br><strong>CAPACIDADE E META</strong><br><br>
       <sub>
-      Capacidade estimada da equipe: <strong>89 Story Points</strong><br><br>
+      Capacidade estimada da equipe: <strong>104 Story Points</strong><br><br>
       Meta da sprint: <strong>User Stories US3, US4, US5 e US6</strong><br><br>
       Previsão de extras: nenhum item extra planejado
       </sub>
@@ -139,7 +139,7 @@
 
 | ID | Prioridade | User Story | Estimativa |
 |:---:|:---:|---|:---:|
-| US3 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Operador de Dados, quero verificar se os dados enviados estão corretos e separar os que têm problema, para que só sigam adiante informações confiáveis. | 13 |
+| US3 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Operador de Dados, quero verificar se os dados enviados estão corretos e separar os que têm problema, para que só sigam adiante informações confiáveis. | 28 |
 | US4 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Operador de Dados, quero organizar e padronizar os dados já verificados, para que fiquem prontos para serem cruzados com outras informações. | 21 |
 | US5 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Analista, quero cruzar as informações de diferentes fontes e calcular os indicadores ambientais, para que consiga montar relatórios. | 34 |
 | US6 | ![Alta](https://img.shields.io/badge/Alta-FE5000?style=flat-square&logoColor=white) | Como Gestor, quero conferir a qualidade dos dados antes de aprová-los e guardar cada versão aprovada sem permitir alterações depois, para que os dados aprovados sejam sempre confiáveis. | 21 |
