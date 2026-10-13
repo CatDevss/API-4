@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <sub>Aprendizagem por Projetos Integrados · 2026-2 &nbsp;|&nbsp; 4º Semestre — Banco de Dados &nbsp;|&nbsp; FATEC São José dos Campos</sub>
+  <sub>Aprendizagem por Projetos Integrados · 2026-2 &nbsp;|&nbsp; 4º Semestre - Banco de Dados &nbsp;|&nbsp; FATEC São José dos Campos</sub>
 </p>
 
 <p align="center">
@@ -345,7 +345,7 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
     <td align="center" width="50%">
       <img width="60" height="3" src="https://placehold.co/60x3/808080/808080.png"/>
       <br><strong>DADOS & NUVEM</strong><br><br>
-      <img src="https://img.shields.io/badge/Apache_Airflow-808080?style=for-the-badge&logo=apacheairflow&logoColor=white" /><br>
+      <img src="https://img.shields.io/badge/Docker-808080?style=for-the-badge&logo=docker&logoColor=white" /><br>
       <img src="https://img.shields.io/badge/Oracle_Cloud-808080?style=for-the-badge&logo=oracle&logoColor=white" /><br>
       <img src="https://img.shields.io/badge/GeoJSON-808080?style=for-the-badge&logo=geopandas&logoColor=white" />
     </td>
@@ -357,8 +357,7 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
       <img src="https://img.shields.io/badge/GitHub-FE5000?style=for-the-badge&logo=github&logoColor=white" />
       <img src="https://img.shields.io/badge/GitHub_Projects-FE5000?style=for-the-badge&logo=github&logoColor=white" />
       <img src="https://img.shields.io/badge/Figma-FE5000?style=for-the-badge&logo=figma&logoColor=white" />
-      <img src="https://img.shields.io/badge/Discord-FE5000?style=for-the-badge&logo=discord&logoColor=white" />
-      <img src="https://img.shields.io/badge/Swagger_/_OpenAPI-FE5000?style=for-the-badge&logo=swagger&logoColor=white" />
+      <img src="https://img.shields.io/badge/Microsoft_Teams-FE5000?style=for-the-badge&logo=microsoft&logoColor=white" />
     </td>
   </tr>
 </table>
@@ -367,7 +366,7 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
 
 <br>
 
-<p align="center"><sub><em>Stack definida com base nos requisitos não funcionais do desafio — sujeita a ajustes conforme a equipe avançar.</em></sub></p>
+<p align="center"><sub><em>Stack definida com base nos requisitos não funcionais do desafio - sujeita a ajustes conforme a equipe avançar.</em></sub></p>
 
 <br>
 
@@ -399,10 +398,6 @@ cp .env.example .env
 # (completar com o comando de execução)
 ```
 
-> *Detalhar aqui os pré-requisitos (versão do Java, Oracle Database/Oracle Cloud, Node.js, Apache Airflow etc.)
-> e o passo a passo completo assim que o ambiente for definido — recomenda-se manter um `Manual de Instalação`
-> na pasta `docs/`.*
-
 <br>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
@@ -422,7 +417,6 @@ cp .env.example .env
 | Padrão de Commits | [Acessar](https://github.com/CatDevss/API-4/blob/main/Docs/Padrao-de-Commits.md) |
 | Manual de Instalação | [Acessar](#) |
 | Modelo e Dicionário de Dados (Oracle) | [Acessar](#) |
-| Arquitetura e DAGs do Airflow | [Acessar](#) |
 | Documentação da API (OpenAPI/Swagger) | [Acessar](#) |
 | Manual do Usuário | [Acessar](#) |
 | Critérios de Aceitação | [Acessar](#) |
@@ -478,5 +472,5 @@ cp .env.example .env
 <br>
 
 <p align="center">
-  <sub>Projeto GeoRural DataHub, desenvolvido para a <strong>Visiona Tecnologia Espacial</strong> — Governança e Rastreabilidade de Dados Geoespaciais.</sub>
+  <sub>Projeto GeoRural DataHub, desenvolvido para a <strong>Visiona Tecnologia Espacial</strong> - Governança e Rastreabilidade de Dados Geoespaciais.</sub>
 </p>
