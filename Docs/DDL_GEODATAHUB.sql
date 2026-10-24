@@ -24,10 +24,12 @@ CREATE TABLE IF NOT EXISTS fonte (
     fon_url          VARCHAR2(200) NOT NULL,
     fon_descricao    VARCHAR2(500),
     fon_data_criacao TIMESTAMP DEFAULT current_timestamp NOT NULL,
+    fon_status       NUMBER(1, 0) DEFAULT 1 NOT NULL,
     usr_id           NUMBER NOT NULL,
     CONSTRAINT fk_fonte_usuario FOREIGN KEY ( usr_id )
         REFERENCES usuario ( usr_id ),
-    CONSTRAINT unique_fonte UNIQUE ( fon_nome )
+    CONSTRAINT unique_fonte UNIQUE ( fon_nome ),
+    CONSTRAINT chk_fon_status CHECK ( fon_status IN ( 0, 1 ) )
 );
 
 CREATE TABLE IF NOT EXISTS dicionario (
@@ -56,23 +58,30 @@ CREATE TABLE IF NOT EXISTS conjunto (
 );
 
 CREATE TABLE IF NOT EXISTS ingestao (
-    ing_id     NUMBER
+    ing_id       NUMBER
         GENERATED AS IDENTITY
     PRIMARY KEY,
-    dic_id     NUMBER NOT NULL,
-    usr_id     NUMBER NOT NULL,
-    ing_status VARCHAR2(20) NOT NULL,
-    ing_inicio TIMESTAMP DEFAULT current_timestamp,
+    dic_id       NUMBER NOT NULL,
+    usr_id       NUMBER NOT NULL,
+    ing_tipo     VARCHAR2(20) NOT NULL,
+    ing_status   VARCHAR2(20) NOT NULL,
+    ing_conector VARCHAR2(100),
+    ing_inicio   TIMESTAMP DEFAULT current_timestamp,
     CONSTRAINT fk_ingestao_dicionario FOREIGN KEY ( dic_id )
         REFERENCES dicionario ( dic_id ),
     CONSTRAINT fk_ingestao_usuario FOREIGN KEY ( usr_id )
         REFERENCES usuario ( usr_id ),
     CONSTRAINT chk_ingestao_status
-        CHECK ( ing_status IN ( 'CONCLUIDO', 'ERRO', 'CANCELADO' ) )
+        CHECK ( ing_status IN ( 'CONCLUIDO', 'ERRO', 'CANCELADO' ) ),
+    CONSTRAINT chk_ingestao_tipo
+        CHECK ( ing_tipo IN ( 'UPLOAD', 'API', 'DOWNLOAD', 'SERVICO_GEOGRAFICO' ) )
 );
 
 COMMENT ON COLUMN ingestao.ing_status IS
     'CONCLUIDO, ERRO, CANCELADO';
+
+COMMENT ON COLUMN ingestao.ing_tipo IS
+    'UPLOAD, API, DOWNLOAD, SERVICO_GEOGRAFICO';
 
 CREATE TABLE IF NOT EXISTS arquivo (
     arq_id               NUMBER
@@ -134,9 +143,13 @@ CREATE TABLE IF NOT EXISTS quarentena (
     arq_id             NUMBER,
     qua_status         VARCHAR2(30) NOT NULL,
     qua_motivo         VARCHAR2(500) NOT NULL,
+    qua_tratamento     VARCHAR2(500) NOT NULL,
     qua_data_entrada   TIMESTAMP DEFAULT current_timestamp NOT NULL,
     qua_data_resolucao TIMESTAMP,
-    CONSTRAINT fk_qaurentena_ingestao FOREIGN KEY ( ing_id )
+    usr_id             NUMBER,
+    CONSTRAINT fk_quarentena_usuario FOREIGN KEY ( usr_id )
+        REFERENCES usuario ( usr_id ),
+    CONSTRAINT fk_quarentena_ingestao FOREIGN KEY ( ing_id )
         REFERENCES ingestao ( ing_id ),
     CONSTRAINT fk_quarentena_arquivo FOREIGN KEY ( arq_id )
         REFERENCES arquivo ( arq_id )
@@ -163,14 +176,19 @@ CREATE TABLE IF NOT EXISTS auditoria (
         CHECK ( aud_acao IN ( 'INSERT', 'UPDATE', 'DELETE' ) )
 );
 
+
 -- Triggers de validação e segurança
-CREATE OR REPLACE TRIGGER trg_impedir_exclusao_usuario
-BEFORE DELETE ON usuario
+CREATE OR REPLACE TRIGGER trg_impedir_exclusao_usuario BEFORE
+    DELETE ON usuario
 BEGIN
-    RAISE_APPLICATION_ERROR(
-        -20001,
-        'Não é permitido excluir usuários. Inative o usuário.'
-    );
+    raise_application_error(-20001, 'Não é permitido excluir usuários. Inative o usuário.');
+END;
+/
+
+CREATE OR REPLACE TRIGGER trg_impedir_exclusao_fonte BEFORE
+    DELETE ON fonte
+BEGIN
+    raise_application_error(-20001, 'Não é permitido excluir fontes. Inative a fonte.');
 END;
 /
 
@@ -211,44 +229,42 @@ END;
 /
 
 -- Usuário
-CREATE OR REPLACE TRIGGER trg_auditoria_usuario
-AFTER INSERT OR UPDATE OR DELETE ON usuario
-FOR EACH ROW
+CREATE OR REPLACE TRIGGER trg_auditoria_usuario AFTER
+    INSERT OR UPDATE OR DELETE ON usuario
+    FOR EACH ROW
 DECLARE
     v_acao     VARCHAR2(10);
     v_detalhes VARCHAR2(4000);
     v_usr_id   NUMBER;
 BEGIN
-    IF INSERTING THEN
+    IF inserting THEN
         v_acao := 'INSERT';
-        v_usr_id := :NEW.usr_id;
-
+        v_usr_id := :new.usr_id;
         v_detalhes := 'Novo usuario inserido: '
-                      || :NEW.usr_nome
+                      || :new.usr_nome
                       || ' ('
-                      || :NEW.usr_email
+                      || :new.usr_email
                       || ')';
 
-    ELSIF UPDATING THEN
+    ELSIF updating THEN
         v_acao := 'UPDATE';
-        v_usr_id := :NEW.usr_id;
-
+        v_usr_id := :new.usr_id;
         v_detalhes := 'Usuario atualizado ID: '
-                      || :OLD.usr_id
+                      || :old.usr_id
                       || ' Status anterior: '
-                      || :OLD.usr_status
+                      || :old.usr_status
                       || ' Novo Status: '
-                      || :NEW.usr_status;
+                      || :new.usr_status;
 
-    ELSIF DELETING THEN
+    ELSIF deleting THEN
         v_acao := 'DELETE';
         v_usr_id := NULL;
-
         v_detalhes := 'Usuario removido: '
-                      || :OLD.usr_nome
+                      || :old.usr_nome
                       || ' (Email: '
-                      || :OLD.usr_email
+                      || :old.usr_email
                       || ')';
+
     END IF;
 
     INSERT INTO auditoria (
@@ -258,113 +274,126 @@ BEGIN
         aud_entidade,
         aud_acao,
         aud_detalhes
-    ) VALUES (
-        v_usr_id,
-        NULL,
-        NULL,
-        'USUARIO',
-        v_acao,
-        v_detalhes
-    );
+    ) VALUES ( v_usr_id,
+               NULL,
+               NULL,
+               'USUARIO',
+               v_acao,
+               v_detalhes );
+
 END;
 /
 
 -- Fonte
-CREATE OR REPLACE TRIGGER trg_aud_fonte
-AFTER INSERT OR UPDATE OR DELETE ON fonte
-FOR EACH ROW
+CREATE OR REPLACE TRIGGER trg_aud_fonte AFTER
+    INSERT OR UPDATE OR DELETE ON fonte
+    FOR EACH ROW
 DECLARE
     v_acao     VARCHAR2(10);
     v_detalhes VARCHAR2(4000);
     v_usr_id   NUMBER;
 BEGIN
-    v_usr_id := COALESCE(:NEW.usr_id, :OLD.usr_id);
-
-    IF INSERTING THEN
+    v_usr_id := coalesce(:new.usr_id,
+                         :old.usr_id);
+    IF inserting THEN
         v_acao := 'INSERT';
-
         v_detalhes := 'Nova fonte de dados criada: '
-                      || :NEW.fon_nome
+                      || :new.fon_nome
                       || ' | URL: '
-                      || :NEW.fon_url;
+                      || :new.fon_url;
 
-    ELSIF UPDATING THEN
+    ELSIF updating THEN
         v_acao := 'UPDATE';
-
         v_detalhes := 'Fonte atualizada ID: '
-                      || :OLD.fon_id
+                      || :old.fon_id
                       || ' | Nome: '
-                      || :NEW.fon_nome;
+                      || :new.fon_nome;
 
-    ELSIF DELETING THEN
+        IF :old.fon_status <> :new.fon_status THEN
+            v_detalhes := v_detalhes
+                          || ' | Status: '
+                          ||
+                CASE :old.fon_status
+                    WHEN 1 THEN
+                        'ATIVA'
+                    ELSE 'INATIVA'
+                END
+                          || ' -> '
+                          || CASE :new.fon_status
+                WHEN 1 THEN
+                    'ATIVA'
+                ELSE 'INATIVA'
+            END;
+        END IF;
+
+        IF nvl(:old.fon_descricao,
+               '#') <> nvl(:new.fon_descricao,
+                           '#') THEN
+            v_detalhes := v_detalhes || ' | Descricao alterada';
+        END IF;
+
+    ELSIF deleting THEN
         v_acao := 'DELETE';
-
-        v_detalhes := 'Fonte removida: '
-                      || :OLD.fon_nome;
+        v_detalhes := 'Fonte removida: ' || :old.fon_nome;
     END IF;
 
     INSERT INTO auditoria (
-        usr_id,
-        arq_id,
-        ing_id,
-        aud_entidade,
         aud_acao,
-        aud_detalhes
-    ) VALUES (
-        v_usr_id,
-        NULL,
-        NULL,
-        'FONTE',
-        v_acao,
-        v_detalhes
-    );
+        aud_entidade,
+        aud_detalhes,
+        usr_id
+    ) VALUES ( v_acao,
+               'FONTE',
+               v_detalhes,
+               v_usr_id );
+
 END;
 /
 
 -- Dicionário
-CREATE OR REPLACE TRIGGER trg_aud_dicionario
-AFTER INSERT OR UPDATE OR DELETE ON dicionario
-FOR EACH ROW
+CREATE OR REPLACE TRIGGER trg_aud_dicionario AFTER
+    INSERT OR UPDATE OR DELETE ON dicionario
+    FOR EACH ROW
 DECLARE
     v_acao     VARCHAR2(10);
     v_detalhes VARCHAR2(4000);
     v_usr_id   NUMBER;
 BEGIN
     BEGIN
-        SELECT usr_id
+        SELECT
+            usr_id
         INTO v_usr_id
-        FROM fonte
-        WHERE fon_id = COALESCE(:NEW.fon_id, :OLD.fon_id);
+        FROM
+            fonte
+        WHERE
+            fon_id = coalesce(:new.fon_id,
+                              :old.fon_id);
 
     EXCEPTION
-        WHEN NO_DATA_FOUND THEN
+        WHEN no_data_found THEN
             v_usr_id := NULL;
     END;
 
-    IF INSERTING THEN
+    IF inserting THEN
         v_acao := 'INSERT';
-
         v_detalhes := 'Novo dicionario cadastrado: '
-                      || :NEW.dic_nome
+                      || :new.dic_nome
                       || ' (Versao: '
-                      || :NEW.dic_versao
+                      || :new.dic_versao
                       || ')';
 
-    ELSIF UPDATING THEN
+    ELSIF updating THEN
         v_acao := 'UPDATE';
-
         v_detalhes := 'Dicionario atualizado ID: '
-                      || :OLD.dic_id
+                      || :old.dic_id
                       || ' | Versao: '
-                      || :OLD.dic_versao
+                      || :old.dic_versao
                       || ' -> '
-                      || :NEW.dic_versao;
+                      || :new.dic_versao;
 
-    ELSIF DELETING THEN
+    ELSIF deleting THEN
         v_acao := 'DELETE';
-
-        v_detalhes := 'Dicionario removido: '
-                      || :OLD.dic_nome;
+        v_detalhes := 'Dicionario removido: ' || :old.dic_nome;
     END IF;
 
     INSERT INTO auditoria (
@@ -374,55 +403,51 @@ BEGIN
         aud_entidade,
         aud_acao,
         aud_detalhes
-    ) VALUES (
-        v_usr_id,
-        NULL,
-        NULL,
-        'DICIONARIO',
-        v_acao,
-        v_detalhes
-    );
+    ) VALUES ( v_usr_id,
+               NULL,
+               NULL,
+               'DICIONARIO',
+               v_acao,
+               v_detalhes );
+
 END;
 /
 
 -- Ingestão
-CREATE OR REPLACE TRIGGER trg_aud_ingestao
-AFTER INSERT OR UPDATE OR DELETE ON ingestao
-FOR EACH ROW
+CREATE OR REPLACE TRIGGER trg_aud_ingestao AFTER
+    INSERT OR UPDATE OR DELETE ON ingestao
+    FOR EACH ROW
 DECLARE
     v_acao     VARCHAR2(10);
     v_detalhes VARCHAR2(4000);
     v_usr_id   NUMBER;
     v_ing_id   NUMBER;
 BEGIN
-    v_usr_id := COALESCE(:NEW.usr_id, :OLD.usr_id);
-
-    IF INSERTING THEN
+    v_usr_id := coalesce(:new.usr_id,
+                         :old.usr_id);
+    IF inserting THEN
         v_acao := 'INSERT';
-        v_ing_id := :NEW.ing_id;
-
+        v_ing_id := :new.ing_id;
         v_detalhes := 'Nova ingestao iniciada (ID: '
-                      || :NEW.ing_id
+                      || :new.ing_id
                       || ') | Status: '
-                      || :NEW.ing_status;
+                      || :new.ing_status;
 
-    ELSIF UPDATING THEN
+    ELSIF updating THEN
         v_acao := 'UPDATE';
-        v_ing_id := :NEW.ing_id;
-
+        v_ing_id := :new.ing_id;
         v_detalhes := 'Ingestao atualizada ID: '
-                      || :OLD.ing_id
+                      || :old.ing_id
                       || ' | Status: '
-                      || :OLD.ing_status
+                      || :old.ing_status
                       || ' -> '
-                      || :NEW.ing_status;
+                      || :new.ing_status;
 
-    ELSIF DELETING THEN
+    ELSIF deleting THEN
         v_acao := 'DELETE';
         v_ing_id := NULL;
-
         v_detalhes := 'Registro de ingestao removido (ID: '
-                      || :OLD.ing_id
+                      || :old.ing_id
                       || ')';
     END IF;
 
@@ -433,21 +458,20 @@ BEGIN
         aud_entidade,
         aud_acao,
         aud_detalhes
-    ) VALUES (
-        v_usr_id,
-        NULL,
-        v_ing_id,
-        'INGESTAO',
-        v_acao,
-        v_detalhes
-    );
+    ) VALUES ( v_usr_id,
+               NULL,
+               v_ing_id,
+               'INGESTAO',
+               v_acao,
+               v_detalhes );
+
 END;
 /
 
 -- Arquivo
-CREATE OR REPLACE TRIGGER trg_aud_arquivo
-AFTER INSERT OR UPDATE OR DELETE ON arquivo
-FOR EACH ROW
+CREATE OR REPLACE TRIGGER trg_aud_arquivo AFTER
+    INSERT OR UPDATE OR DELETE ON arquivo
+    FOR EACH ROW
 DECLARE
     v_acao     VARCHAR2(10);
     v_detalhes VARCHAR2(4000);
@@ -456,41 +480,39 @@ DECLARE
     v_ing_id   NUMBER;
 BEGIN
     BEGIN
-        SELECT usr_id
+        SELECT
+            usr_id
         INTO v_usr_id
-        FROM ingestao
-        WHERE ing_id = COALESCE(:NEW.ing_id, :OLD.ing_id);
+        FROM
+            ingestao
+        WHERE
+            ing_id = coalesce(:new.ing_id,
+                              :old.ing_id);
 
     EXCEPTION
-        WHEN NO_DATA_FOUND THEN
+        WHEN no_data_found THEN
             v_usr_id := NULL;
     END;
 
-    IF INSERTING THEN
+    IF inserting THEN
         v_acao := 'INSERT';
-        v_arq_id := :NEW.arq_id;
-        v_ing_id := :NEW.ing_id;
-
+        v_arq_id := :new.arq_id;
+        v_ing_id := :new.ing_id;
         v_detalhes := 'Arquivo registrado: '
-                      || :NEW.arq_nome
+                      || :new.arq_nome
                       || ' | Formato: '
-                      || :NEW.arq_formato;
+                      || :new.arq_formato;
 
-    ELSIF UPDATING THEN
+    ELSIF updating THEN
         v_acao := 'UPDATE';
-        v_arq_id := :NEW.arq_id;
-        v_ing_id := :NEW.ing_id;
-
-        v_detalhes := 'Metadados de arquivo atualizados ID: '
-                      || :OLD.arq_id;
-
-    ELSIF DELETING THEN
+        v_arq_id := :new.arq_id;
+        v_ing_id := :new.ing_id;
+        v_detalhes := 'Metadados de arquivo atualizados ID: ' || :old.arq_id;
+    ELSIF deleting THEN
         v_acao := 'DELETE';
         v_arq_id := NULL;
-        v_ing_id := :OLD.ing_id;
-
-        v_detalhes := 'Arquivo removido: '
-                      || :OLD.arq_nome;
+        v_ing_id := :old.ing_id;
+        v_detalhes := 'Arquivo removido: ' || :old.arq_nome;
     END IF;
 
     INSERT INTO auditoria (
@@ -500,21 +522,20 @@ BEGIN
         aud_entidade,
         aud_acao,
         aud_detalhes
-    ) VALUES (
-        v_usr_id,
-        v_arq_id,
-        v_ing_id,
-        'ARQUIVO',
-        v_acao,
-        v_detalhes
-    );
+    ) VALUES ( v_usr_id,
+               v_arq_id,
+               v_ing_id,
+               'ARQUIVO',
+               v_acao,
+               v_detalhes );
+
 END;
 /
 
 -- Quarentena
-CREATE OR REPLACE TRIGGER trg_aud_quarentena
-AFTER INSERT OR UPDATE OR DELETE ON quarentena
-FOR EACH ROW
+CREATE OR REPLACE TRIGGER trg_aud_quarentena AFTER
+    INSERT OR UPDATE OR DELETE ON quarentena
+    FOR EACH ROW
 DECLARE
     v_acao     VARCHAR2(10);
     v_detalhes VARCHAR2(4000);
@@ -522,40 +543,38 @@ DECLARE
     v_ing_id   NUMBER;
 BEGIN
     BEGIN
-        SELECT usr_id
+        SELECT
+            usr_id
         INTO v_usr_id
-        FROM ingestao
-        WHERE ing_id = COALESCE(:NEW.ing_id, :OLD.ing_id);
+        FROM
+            ingestao
+        WHERE
+            ing_id = coalesce(:new.ing_id,
+                              :old.ing_id);
 
     EXCEPTION
-        WHEN NO_DATA_FOUND THEN
+        WHEN no_data_found THEN
             v_usr_id := NULL;
     END;
 
-    IF INSERTING THEN
+    IF inserting THEN
         v_acao := 'INSERT';
-        v_ing_id := :NEW.ing_id;
-
-        v_detalhes := 'Registro enviado para quarentena | Motivo: '
-                      || :NEW.qua_motivo;
-
-    ELSIF UPDATING THEN
+        v_ing_id := :new.ing_id;
+        v_detalhes := 'Registro enviado para quarentena | Motivo: ' || :new.qua_motivo;
+    ELSIF updating THEN
         v_acao := 'UPDATE';
-        v_ing_id := :NEW.ing_id;
-
+        v_ing_id := :new.ing_id;
         v_detalhes := 'Quarentena atualizada ID: '
-                      || :OLD.qua_id
+                      || :old.qua_id
                       || ' | Status: '
-                      || :OLD.qua_status
+                      || :old.qua_status
                       || ' -> '
-                      || :NEW.qua_status;
+                      || :new.qua_status;
 
-    ELSIF DELETING THEN
+    ELSIF deleting THEN
         v_acao := 'DELETE';
-        v_ing_id := :OLD.ing_id;
-
-        v_detalhes := 'Registro de quarentena removido ID: '
-                      || :OLD.qua_id;
+        v_ing_id := :old.ing_id;
+        v_detalhes := 'Registro de quarentena removido ID: ' || :old.qua_id;
     END IF;
 
     INSERT INTO auditoria (
@@ -565,47 +584,40 @@ BEGIN
         aud_entidade,
         aud_acao,
         aud_detalhes
-    ) VALUES (
-        v_usr_id,
-        NULL,
-        v_ing_id,
-        'QUARENTENA',
-        v_acao,
-        v_detalhes
-    );
+    ) VALUES ( v_usr_id,
+               NULL,
+               v_ing_id,
+               'QUARENTENA',
+               v_acao,
+               v_detalhes );
+
 END;
 /
 
 -- Conjunto
-CREATE OR REPLACE TRIGGER trg_aud_conjunto
-AFTER INSERT OR UPDATE OR DELETE ON conjunto
-FOR EACH ROW
+CREATE OR REPLACE TRIGGER trg_aud_conjunto AFTER
+    INSERT OR UPDATE OR DELETE ON conjunto
+    FOR EACH ROW
 DECLARE
     v_acao     VARCHAR2(10);
     v_detalhes VARCHAR2(4000);
     v_usr_id   NUMBER;
 BEGIN
-    v_usr_id := COALESCE(:NEW.usr_id, :OLD.usr_id);
-
-    IF INSERTING THEN
+    v_usr_id := coalesce(:new.usr_id,
+                         :old.usr_id);
+    IF inserting THEN
         v_acao := 'INSERT';
-
-        v_detalhes := 'Novo conjunto criado: '
-                      || :NEW.con_nome;
-
-    ELSIF UPDATING THEN
+        v_detalhes := 'Novo conjunto criado: ' || :new.con_nome;
+    ELSIF updating THEN
         v_acao := 'UPDATE';
-
         v_detalhes := 'Conjunto atualizado ID: '
-                      || :OLD.con_id
+                      || :old.con_id
                       || ' | Nome: '
-                      || :NEW.con_nome;
+                      || :new.con_nome;
 
-    ELSIF DELETING THEN
+    ELSIF deleting THEN
         v_acao := 'DELETE';
-
-        v_detalhes := 'Conjunto removido: '
-                      || :OLD.con_nome;
+        v_detalhes := 'Conjunto removido: ' || :old.con_nome;
     END IF;
 
     INSERT INTO auditoria (
@@ -615,64 +627,62 @@ BEGIN
         aud_entidade,
         aud_acao,
         aud_detalhes
-    ) VALUES (
-        v_usr_id,
-        NULL,
-        NULL,
-        'CONJUNTO',
-        v_acao,
-        v_detalhes
-    );
+    ) VALUES ( v_usr_id,
+               NULL,
+               NULL,
+               'CONJUNTO',
+               v_acao,
+               v_detalhes );
+
 END;
 /
 
 -- Versão
-CREATE OR REPLACE TRIGGER trg_aud_versao
-AFTER INSERT OR UPDATE OR DELETE ON versao
-FOR EACH ROW
+CREATE OR REPLACE TRIGGER trg_aud_versao AFTER
+    INSERT OR UPDATE OR DELETE ON versao
+    FOR EACH ROW
 DECLARE
     v_acao     VARCHAR2(10);
     v_detalhes VARCHAR2(4000);
     v_usr_id   NUMBER;
     v_arq_id   NUMBER;
 BEGIN
-    v_arq_id := COALESCE(:NEW.arq_id, :OLD.arq_id);
-
+    v_arq_id := coalesce(:new.arq_id,
+                         :old.arq_id);
     BEGIN
-        SELECT i.usr_id
+        SELECT
+            i.usr_id
         INTO v_usr_id
-        FROM arquivo a
-        JOIN ingestao i ON i.ing_id = a.ing_id
-        WHERE a.arq_id = v_arq_id;
+        FROM
+                 arquivo a
+            JOIN ingestao i ON i.ing_id = a.ing_id
+        WHERE
+            a.arq_id = v_arq_id;
 
     EXCEPTION
-        WHEN NO_DATA_FOUND THEN
+        WHEN no_data_found THEN
             v_usr_id := NULL;
     END;
 
-    IF INSERTING THEN
+    IF inserting THEN
         v_acao := 'INSERT';
-
         v_detalhes := 'Nova versao gerada: '
-                      || :NEW.ver_numero
+                      || :new.ver_numero
                       || ' | Status: '
-                      || :NEW.ver_status;
+                      || :new.ver_status;
 
-    ELSIF UPDATING THEN
+    ELSIF updating THEN
         v_acao := 'UPDATE';
-
         v_detalhes := 'Versao atualizada ID: '
-                      || :OLD.ver_id
+                      || :old.ver_id
                       || ' | Status: '
-                      || :OLD.ver_status
+                      || :old.ver_status
                       || ' -> '
-                      || :NEW.ver_status;
+                      || :new.ver_status;
 
-    ELSIF DELETING THEN
+    ELSIF deleting THEN
         v_acao := 'DELETE';
-
-        v_detalhes := 'Versao removida ID: '
-                      || :OLD.ver_id;
+        v_detalhes := 'Versao removida ID: ' || :old.ver_id;
     END IF;
 
     INSERT INTO auditoria (
@@ -682,21 +692,20 @@ BEGIN
         aud_entidade,
         aud_acao,
         aud_detalhes
-    ) VALUES (
-        v_usr_id,
-        v_arq_id,
-        NULL,
-        'VERSAO',
-        v_acao,
-        v_detalhes
-    );
+    ) VALUES ( v_usr_id,
+               v_arq_id,
+               NULL,
+               'VERSAO',
+               v_acao,
+               v_detalhes );
+
 END;
 /
 
 -- Associação entre conjunto e arquivo
-CREATE OR REPLACE TRIGGER trg_aud_conjunto_arquivo
-AFTER INSERT OR DELETE ON conjunto_arquivo
-FOR EACH ROW
+CREATE OR REPLACE TRIGGER trg_aud_conjunto_arquivo AFTER
+    INSERT OR DELETE ON conjunto_arquivo
+    FOR EACH ROW
 DECLARE
     v_acao     VARCHAR2(10);
     v_detalhes VARCHAR2(4000);
@@ -704,35 +713,38 @@ DECLARE
     v_con_id   NUMBER;
     v_arq_id   NUMBER;
 BEGIN
-    v_con_id := COALESCE(:NEW.con_id, :OLD.con_id);
-    v_arq_id := COALESCE(:NEW.arq_id, :OLD.arq_id);
-
+    v_con_id := coalesce(:new.con_id,
+                         :old.con_id);
+    v_arq_id := coalesce(:new.arq_id,
+                         :old.arq_id);
     BEGIN
-        SELECT usr_id
+        SELECT
+            usr_id
         INTO v_usr_id
-        FROM conjunto
-        WHERE con_id = v_con_id;
+        FROM
+            conjunto
+        WHERE
+            con_id = v_con_id;
 
     EXCEPTION
-        WHEN NO_DATA_FOUND THEN
+        WHEN no_data_found THEN
             v_usr_id := NULL;
     END;
 
-    IF INSERTING THEN
+    IF inserting THEN
         v_acao := 'INSERT';
-
         v_detalhes := 'Arquivo ID '
-                      || :NEW.arq_id
+                      || :new.arq_id
                       || ' associado ao Conjunto ID '
-                      || :NEW.con_id;
+                      || :new.con_id;
 
-    ELSIF DELETING THEN
+    ELSIF deleting THEN
         v_acao := 'DELETE';
-
         v_detalhes := 'Arquivo ID '
-                      || :OLD.arq_id
+                      || :old.arq_id
                       || ' desassociado do Conjunto ID '
-                      || :OLD.con_id;
+                      || :old.con_id;
+
     END IF;
 
     INSERT INTO auditoria (
@@ -742,13 +754,12 @@ BEGIN
         aud_entidade,
         aud_acao,
         aud_detalhes
-    ) VALUES (
-        v_usr_id,
-        v_arq_id,
-        NULL,
-        'CONJUNTO_ARQUIVO',
-        v_acao,
-        v_detalhes
-    );
+    ) VALUES ( v_usr_id,
+               v_arq_id,
+               NULL,
+               'CONJUNTO_ARQUIVO',
+               v_acao,
+               v_detalhes );
+
 END;
 /
