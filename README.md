@@ -370,34 +370,6 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
 
 <br>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
-
-<br>
-
-<h2 align="center"><img src="https://api.iconify.design/tabler/terminal-2.svg?color=%23FFFFFF" width="20" /> Como Executar o Projeto</h2>
-
-<br>
-
-```bash
-# Clonar o repositório
-git clone https://github.com/<organizacao>/<repositorio>.git
-
-# Acessar a pasta do projeto
-cd <repositorio>
-
-# Configurar variáveis de ambiente (conexão Oracle, credenciais, etc.)
-cp .env.example .env
-
-# Instalar dependências / build do backend
-# (completar com o comando, ex: ./mvnw clean install)
-
-# Instalar dependências do frontend
-# (completar com o comando, ex: npm install)
-
-# Executar a aplicação
-# (completar com o comando de execução)
-```
-
 <br>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
