@@ -297,3 +297,10 @@ Nunca versione o `.env`, a pasta `wallet/`, a pasta `.oci/` nem arquivos `.pem`.
 <br>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
+
+<br>
+
+<p align="center">
+  <sub>Projeto GeoRural DataHub, desenvolvido para a <strong>Visiona Tecnologia Espacial</strong> - Governança e Rastreabilidade de Dados Geoespaciais.</sub>
+</p>
+
