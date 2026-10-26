@@ -119,17 +119,9 @@ node -v
 
 ### 1.2 Criar um usuário no banco
 
-Para que a aplicação tenha acesso ao banco pela wallet, é **necessário criar um usuário no Oracle**. Conecte-se como `ADMIN` (por exemplo, em *Database Actions → SQL*) e crie o usuário que o back-end vai usar.
+Para que a aplicação tenha acesso ao banco pela wallet, é **necessário criar um banco de dados na Oracle: Autonomous AI Database**.
 
-Exemplo (ajuste o nome, a senha e os privilégios à política do seu banco):
-
-```sql
-CREATE USER georural IDENTIFIED BY "<senha-forte>";
-GRANT DWROLE TO georural;
-ALTER USER georural QUOTA UNLIMITED ON DATA;
-```
-
-O nome de usuário e a senha criados aqui vão para o `.env` do back-end (seção 3).
+O nome de usuário e a senha vão para o `.env` do back-end (seção 3).
 
 ### 1.3 Criar as tabelas e carregar os dados iniciais
 
