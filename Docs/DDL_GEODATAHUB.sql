@@ -143,7 +143,7 @@ CREATE TABLE IF NOT EXISTS quarentena (
     arq_id             NUMBER,
     qua_status         VARCHAR2(30) NOT NULL,
     qua_motivo         VARCHAR2(500) NOT NULL,
-    qua_tratamento     VARCHAR2(500) NOT NULL,
+    qua_tratamento     VARCHAR2(500),
     qua_data_entrada   TIMESTAMP DEFAULT current_timestamp NOT NULL,
     qua_data_resolucao TIMESTAMP,
     usr_id             NUMBER,
