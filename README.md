@@ -41,12 +41,11 @@
       <img src="https://api.iconify.design/tabler/route.svg?color=%23FFFFFF" width="16" /> <a href="#-objetivo-e-fluxo-mínimo">Objetivo e Fluxo Mínimo</a><br><br>
       <img src="https://api.iconify.design/tabler/list-check.svg?color=%23FFFFFF" width="16" /> <a href="#-escopo-e-requisitos-funcionais">Escopo e Requisitos Funcionais</a><br><br>
       <img src="https://api.iconify.design/tabler/flag.svg?color=%23FFFFFF" width="16" /> <a href="#-entrega-esperada-e-critério-de-sucesso">Entrega Esperada e Critério de Sucesso</a><br><br>
-      <img src="https://api.iconify.design/tabler/clipboard-list.svg?color=%23FFFFFF" width="16" /> <a href="#-backlog-do-produto">Backlog do Produto</a>
     </td>
     <td width="50%">
+      <img src="https://api.iconify.design/tabler/clipboard-list.svg?color=%23FFFFFF" width="16" /> <a href="#-backlog-do-produto">Backlog do Produto</a><br><br>
       <img src="https://api.iconify.design/tabler/calendar-time.svg?color=%23FFFFFF" width="16" /> <a href="#-cronograma-das-sprints">Cronograma das Sprints</a><br><br>
       <img src="https://api.iconify.design/tabler/code.svg?color=%23FFFFFF" width="16" /> <a href="#-tecnologias-utilizadas">Tecnologias Utilizadas</a><br><br>
-      <img src="https://api.iconify.design/tabler/terminal-2.svg?color=%23FFFFFF" width="16" /> <a href="#-como-executar-o-projeto">Como Executar o Projeto</a><br><br>
       <img src="https://api.iconify.design/tabler/file-text.svg?color=%23FFFFFF" width="16" /> <a href="#-documentação">Documentação</a><br><br>
       <img src="https://api.iconify.design/tabler/palette.svg?color=%23FFFFFF" width="16" /> <a href="#-paleta-de-cores-do-projeto">Paleta de Cores do Projeto</a><br><br>
       <img src="https://api.iconify.design/tabler/users.svg?color=%23FFFFFF" width="16" /> <a href="#-equipe">Equipe</a>
@@ -309,7 +308,7 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
 
 <br>
 
-<h2 align="center"><img src="https://api.iconify.design/tabler/code.svg?color=%23FFFFFF" width="20" /> Tecnologias Usadas</h2>
+<h2 align="center"><img src="https://api.iconify.design/tabler/code.svg?color=%23FFFFFF" width="20" /> Tecnologias Utilizadas</h2>
 
 <br>
 
@@ -388,10 +387,8 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
 | Estratégia de Branch e Pull Request | [Acessar](https://github.com/CatDevss/API-4/blob/main/Docs/Branch_Strategy.md) |
 | Padrão de Commits | [Acessar](https://github.com/CatDevss/API-4/blob/main/Docs/Padrao-de-Commits.md) |
 | Manual de Instalação | [Acessar](https://github.com/CatDevss/API-4/blob/main/Docs/manualInstalacao.md) |
-| Modelo e Dicionário de Dados (Oracle) | [Acessar](#) |
-| Documentação da API (OpenAPI/Swagger) | [Acessar](#) |
 | Manual do Usuário | [Acessar](#) |
-| Critérios de Aceitação | [Acessar](#) |
+| Critérios de Aceitação | [Acessar](https://github.com/CatDevss/API-4/blob/main/Docs/DoD_DoR.md) |
 
 </div>
 
