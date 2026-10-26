@@ -176,6 +176,39 @@ CREATE TABLE IF NOT EXISTS auditoria (
         CHECK ( aud_acao IN ( 'INSERT', 'UPDATE', 'DELETE' ) )
 );
 
+CREATE TABLE IF NOT EXISTS camada (
+    cam_id           NUMBER
+        GENERATED AS IDENTITY
+    PRIMARY KEY,
+    con_id           NUMBER NOT NULL,
+    ver_id           NUMBER NOT NULL,
+    cam_nome         VARCHAR2(200) NOT NULL,
+    cam_descricao    VARCHAR2(500),
+    cam_tipo_geom    VARCHAR2(30) NOT NULL,
+    cam_srid         NUMBER NOT NULL,
+    cam_data_criacao TIMESTAMP DEFAULT current_timestamp NOT NULL,
+    CONSTRAINT fk_camada_conjunto FOREIGN KEY ( con_id )
+        REFERENCES conjunto ( con_id ),
+    CONSTRAINT fk_camada_versao FOREIGN KEY ( ver_id )
+        REFERENCES versao ( ver_id ),
+    CONSTRAINT chk_camada_tipo_geom CHECK ( cam_tipo_geom IN (
+        'POINT', 'MULTIPOINT', 'LINESTRING', 'MULTILINESTRING',
+        'POLYGON', 'MULTIPOLYGON', 'MIXED' ) )
+);
+ 
+CREATE TABLE IF NOT EXISTS feicao (
+    fei_id        NUMBER
+        GENERATED AS IDENTITY
+    PRIMARY KEY,
+    cam_id        NUMBER NOT NULL,
+    fei_id_origem VARCHAR2(100),
+    fei_geometria MDSYS.SDO_GEOMETRY NOT NULL,
+    fei_atributos CLOB,
+    CONSTRAINT fk_feicao_camada FOREIGN KEY ( cam_id )
+        REFERENCES camada ( cam_id ),
+    CONSTRAINT chk_fei_atributos CHECK ( fei_atributos IS JSON )
+);
+
 
 -- Triggers de validação e segurança
 CREATE OR REPLACE TRIGGER trg_impedir_exclusao_usuario BEFORE
@@ -218,6 +251,80 @@ EXCEPTION
 END;
 /
 
+-- Proteção das camadas de versões aprovadas
+CREATE OR REPLACE TRIGGER trg_proteger_camada BEFORE
+    UPDATE OR DELETE ON camada
+    FOR EACH ROW
+DECLARE
+    v_status versao.ver_status%TYPE;
+BEGIN
+    SELECT ver_status
+      INTO v_status
+      FROM versao
+     WHERE ver_id = :old.ver_id;
+ 
+    IF v_status IN ( 'TRATADA', 'PUBLICADA' ) THEN
+        raise_application_error(-20002,
+            'Camada protegida: pertence a versão aprovada (' || v_status || ').');
+    END IF;
+END;
+/
+
+ 
+-- Manutenção controlada: só nome e descrição podem mudar
+CREATE OR REPLACE TRIGGER trg_camada_metadados BEFORE
+    UPDATE ON camada
+    FOR EACH ROW
+BEGIN
+    IF :new.con_id <> :old.con_id
+       OR :new.ver_id <> :old.ver_id
+       OR :new.cam_srid <> :old.cam_srid
+       OR :new.cam_tipo_geom <> :old.cam_tipo_geom
+       OR :new.cam_data_criacao <> :old.cam_data_criacao THEN
+        raise_application_error(-20003,
+            'Somente nome e descrição da camada podem ser alterados.');
+    END IF;
+END;
+/
+
+-- Camada de versão aprovada (TRATADA ou PUBLICADA) não pode ser alterada nem excluída
+CREATE OR REPLACE TRIGGER trg_proteger_camada BEFORE
+    UPDATE OR DELETE ON camada
+    FOR EACH ROW
+DECLARE
+    v_status versao.ver_status%TYPE;
+BEGIN
+    SELECT ver_status
+      INTO v_status
+      FROM versao
+     WHERE ver_id = :old.ver_id;
+ 
+    IF v_status IN ( 'TRATADA', 'PUBLICADA' ) THEN
+        raise_application_error(-20002,
+            'Camada protegida: pertence a versão aprovada (' || v_status || ').');
+    END IF;
+END;
+/
+ 
+-- Feições de camada protegida não podem ser inseridas, alteradas nem excluídas
+CREATE OR REPLACE TRIGGER trg_proteger_feicao BEFORE
+    INSERT OR UPDATE OR DELETE ON feicao
+    FOR EACH ROW
+DECLARE
+    v_status versao.ver_status%TYPE;
+BEGIN
+    SELECT v.ver_status
+      INTO v_status
+      FROM camada c
+      JOIN versao v ON v.ver_id = c.ver_id
+     WHERE c.cam_id = coalesce(:new.cam_id, :old.cam_id);
+ 
+    IF v_status IN ( 'TRATADA', 'PUBLICADA' ) THEN
+        raise_application_error(-20004,
+            'Feição protegida: a camada pertence a versão aprovada (' || v_status || ').');
+    END IF;
+END;
+/
 
 -- Triggers de auditoria
 

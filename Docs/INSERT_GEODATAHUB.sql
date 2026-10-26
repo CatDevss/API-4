@@ -548,7 +548,7 @@ INSERT INTO dicionario (
 )
 SELECT
     f.fon_id,
-    'IBGE - Malha municipal PR - ZIP 2024',
+    'IBGE - Malha municipal PR - 2024',
     'Atributos do DBF oficial PR_Municipios_2024 e alias '
     || 'codarea adicionado pelo conector. Recorte do Parana. '
     || 'Campos de concentracao urbana podem estar vazios.',
@@ -748,6 +748,46 @@ SELECT
     CURRENT_TIMESTAMP
 FROM fonte f
 WHERE f.fon_nome = 'INPE - Queimadas';
+
+
+-- IBGE - MALHA MUNICIPAL PR - 2025
+INSERT INTO dicionario (
+    fon_id,
+    dic_nome,
+    dic_descricao,
+    dic_versao,
+    dic_estrutura,
+    dic_criado_em
+)
+SELECT
+    f.fon_id,
+    'IBGE - Malha municipal PR - 2025',
+    'Dicionario para validacao dos atributos da malha '
+    || 'municipal do Parana, edicao 2025, em formato GeoJSON.',
+    7,
+    '[
+      {"name":"CD_MUN","required":true,"type":"STRING","domain":[],"unique":true},
+      {"name":"NM_MUN","required":true,"type":"STRING","domain":[],"unique":false},
+      {"name":"CD_RGI","required":false,"type":"STRING","domain":[],"unique":false},
+      {"name":"NM_RGI","required":false,"type":"STRING","domain":[],"unique":false},
+      {"name":"CD_RGINT","required":false,"type":"STRING","domain":[],"unique":false},
+      {"name":"NM_RGINT","required":false,"type":"STRING","domain":[],"unique":false},
+      {"name":"CD_UF","required":true,"type":"STRING","domain":["41"],"unique":false},
+      {"name":"NM_UF","required":true,"type":"STRING","domain":["Paraná"],"unique":false},
+      {"name":"SIGLA_UF","required":true,"type":"STRING","domain":["PR"],"unique":false},
+      {"name":"CD_REGIAO","required":false,"type":"STRING","domain":[],"unique":false},
+      {"name":"NM_REGIAO","required":false,"type":"STRING","domain":[],"unique":false},
+      {"name":"SIGLA_RG","required":false,"type":"STRING","domain":[],"unique":false},
+      {"name":"CD_CONCURB","required":false,"type":"STRING","domain":[],"unique":false},
+      {"name":"NM_CONCURB","required":false,"type":"STRING","domain":[],"unique":false},
+      {"name":"AREA_KM2","required":true,"type":"NUMBER","domain":[],"unique":false},
+      {"name":"codarea","required":true,"type":"STRING","domain":[],"unique":false}
+    ]',
+    CURRENT_TIMESTAMP
+FROM fonte f
+WHERE f.fon_nome = 'IBGE';
+
+
 
 COMMIT;
 
