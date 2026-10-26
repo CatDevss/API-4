@@ -415,7 +415,7 @@ cp .env.example .env
 | Definition of Ready (DoR) e Definition of Done (DoD) | [Acessar](https://github.com/CatDevss/API-4/blob/main/Docs/DoD_DoR.md) |
 | Estratégia de Branch e Pull Request | [Acessar](https://github.com/CatDevss/API-4/blob/main/Docs/Branch_Strategy.md) |
 | Padrão de Commits | [Acessar](https://github.com/CatDevss/API-4/blob/main/Docs/Padrao-de-Commits.md) |
-| Manual de Instalação | [Acessar](#) |
+| Manual de Instalação | [Acessar](https://github.com/CatDevss/API-4/blob/main/Docs/manualInstalacao.md) |
 | Modelo e Dicionário de Dados (Oracle) | [Acessar](#) |
 | Documentação da API (OpenAPI/Swagger) | [Acessar](#) |
 | Manual do Usuário | [Acessar](#) |
