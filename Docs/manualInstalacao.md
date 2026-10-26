@@ -125,12 +125,12 @@ O nome de usuário e a senha vão para o `.env` do back-end (seção 3).
 
 ### 1.3 Criar as tabelas e carregar os dados iniciais
 
-O back-end **não cria as tabelas** automaticamente: ele apenas valida o schema ao iniciar. O **DDL** (criação das tabelas) e os **inserts iniciais**, necessários para o funcionamento do sistema, estão no repositório do projeto no GitHub: [Acessar](#).
+O back-end **não cria as tabelas** automaticamente: ele apenas valida o schema ao iniciar. O **DDL** (criação das tabelas) e os **inserts iniciais**, necessários para o funcionamento do sistema, estão no repositório do projeto no GitHub.
 
 Execute, conectado com o usuário criado no passo 1.2 e nesta ordem:
 
-1. o script de **DDL**;
-2. o script de **inserts iniciais**.
+1. o script de **DDL**: [Acessar](https://github.com/CatDevss/API-4/blob/main/Docs/DDL_GEODATAHUB.sql)
+2. o script de **inserts iniciais**: [Acessar](https://github.com/CatDevss/API-4/blob/main/Docs/INSERT_GEODATAHUB.sql)
 
 > *Sem o DDL o back-end não inicia, e sem os inserts iniciais (por exemplo, os usuários do sistema) a aplicação não funciona corretamente.*
 
