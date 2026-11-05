@@ -26,6 +26,60 @@
 
 <br>
 
+<h2 align="center">
+  <img src="https://api.iconify.design/tabler/brand-github.svg?color=%23FFFFFF" width="20" />
+  Repositórios do Projeto
+</h2>
+
+<br>
+
+<p align="center">
+  Acesse os repositórios que compõem a arquitetura do GeoRural DataHub.
+</p>
+
+<br>
+
+<div align="center">
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="https://img.icons8.com/ios-filled/50/FFA300/monitor.png" width="36" height="36" alt="Frontend" />
+      <br><br>
+      <strong>FRONTEND</strong>
+      <br>
+      <sub>Portal web · Vue.js</sub>
+      <br><br>
+      <a href="https://github.com/CatDevss/FRONTEND-API-4">
+        <img src="https://img.shields.io/badge/ACESSAR_FRONTEND-2D2D2D?style=for-the-badge&logo=github&logoColor=FFA300" alt="Acessar Frontend" />
+      </a>
+    </td>
+    <td align="center" width="50%">
+      <img src="https://img.icons8.com/ios-filled/50/FE5000/server.png" width="36" height="36" alt="Backend" />
+      <br><br>
+      <strong>BACKEND</strong>
+      <br>
+      <sub>API REST · Java & Spring Boot</sub>
+      <br><br>
+      <a href="https://github.com/CatDevss/BACKEND-API-4">
+        <img src="https://img.shields.io/badge/ACESSAR_BACKEND-2D2D2D?style=for-the-badge&logo=github&logoColor=FE5000" alt="Acessar Backend" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+</div>
+
+</div>
+
+<br>
+
+<br>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FE5000,100:FFA300&height=4" />
+
+<br>
+
 <h2 align="center"><img src="https://api.iconify.design/tabler/list-details.svg?color=%23FFFFFF" width="20" /> Sumário</h2>
 
 <br>
