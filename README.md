@@ -84,23 +84,59 @@
 
 <div align="center">
 
-<table>
+<table align="center" width="100%">
   <tr>
-    <td width="50%">
-      <img src="https://api.iconify.design/tabler/building-broadcast-tower.svg?color=%23FFFFFF" width="16" /> <a href="#-sobre-a-visiona">Sobre a Visiona</a><br><br>
-      <img src="https://api.iconify.design/tabler/target-arrow.svg?color=%23FFFFFF" width="16" /> <a href="#-o-desafio">O Desafio</a><br><br>
-      <img src="https://api.iconify.design/tabler/map-pin.svg?color=%23FFFFFF" width="16" /> <a href="#-área-de-interesse">Área de Interesse</a><br><br>
-      <img src="https://api.iconify.design/tabler/route.svg?color=%23FFFFFF" width="16" /> <a href="#-objetivo-e-fluxo-mínimo">Objetivo e Fluxo Mínimo</a><br><br>
-      <img src="https://api.iconify.design/tabler/list-check.svg?color=%23FFFFFF" width="16" /> <a href="#-escopo-e-requisitos-funcionais">Escopo e Requisitos Funcionais</a><br><br>
-      <img src="https://api.iconify.design/tabler/flag.svg?color=%23FFFFFF" width="16" /> <a href="#-entrega-esperada-e-critério-de-sucesso">Entrega Esperada e Critério de Sucesso</a><br><br>
+    <td width="50%" valign="top">
+      <p>
+        <img src="https://api.iconify.design/tabler/building-broadcast-tower.svg?color=%23FFFFFF" width="16" />
+        <a href="#-sobre-a-visiona">Sobre a Visiona</a>
+      </p>
+      <p>
+        <img src="https://api.iconify.design/tabler/target-arrow.svg?color=%23FFFFFF" width="16" />
+        <a href="#-o-desafio">O Desafio</a>
+      </p>
+      <p>
+        <img src="https://api.iconify.design/tabler/map-pin.svg?color=%23FFFFFF" width="16" />
+        <a href="#-área-de-interesse">Área de Interesse</a>
+      </p>
+      <p>
+        <img src="https://api.iconify.design/tabler/route.svg?color=%23FFFFFF" width="16" />
+        <a href="#-objetivo-e-fluxo-mínimo">Objetivo e Fluxo Mínimo</a>
+      </p>
+      <p>
+        <img src="https://api.iconify.design/tabler/list-check.svg?color=%23FFFFFF" width="16" />
+        <a href="#-escopo-e-requisitos-funcionais">Escopo e Requisitos Funcionais</a>
+      </p>
+      <p>
+        <img src="https://api.iconify.design/tabler/flag.svg?color=%23FFFFFF" width="16" />
+        <a href="#-entrega-esperada-e-critério-de-sucesso">Entrega Esperada e Critério de Sucesso</a>
+      </p>
     </td>
-    <td width="50%">
-      <img src="https://api.iconify.design/tabler/clipboard-list.svg?color=%23FFFFFF" width="16" /> <a href="#-backlog-do-produto">Backlog do Produto</a><br><br>
-      <img src="https://api.iconify.design/tabler/calendar-time.svg?color=%23FFFFFF" width="16" /> <a href="#-cronograma-das-sprints">Cronograma das Sprints</a><br><br>
-      <img src="https://api.iconify.design/tabler/code.svg?color=%23FFFFFF" width="16" /> <a href="#-tecnologias-utilizadas">Tecnologias Utilizadas</a><br><br>
-      <img src="https://api.iconify.design/tabler/file-text.svg?color=%23FFFFFF" width="16" /> <a href="#-documentação">Documentação</a><br><br>
-      <img src="https://api.iconify.design/tabler/palette.svg?color=%23FFFFFF" width="16" /> <a href="#-paleta-de-cores-do-projeto">Paleta de Cores do Projeto</a><br><br>
-      <img src="https://api.iconify.design/tabler/users.svg?color=%23FFFFFF" width="16" /> <a href="#-equipe">Equipe</a>
+    <td width="50%" valign="top">
+      <p>
+        <img src="https://api.iconify.design/tabler/clipboard-list.svg?color=%23FFFFFF" width="16" />
+        <a href="#-backlog-do-produto">Backlog do Produto</a>
+      </p>
+      <p>
+        <img src="https://api.iconify.design/tabler/calendar-time.svg?color=%23FFFFFF" width="16" />
+        <a href="#-cronograma-das-sprints">Cronograma das Sprints</a>
+      </p>
+      <p>
+        <img src="https://api.iconify.design/tabler/code.svg?color=%23FFFFFF" width="16" />
+        <a href="#-tecnologias-utilizadas">Tecnologias Utilizadas</a>
+      </p>
+      <p>
+        <img src="https://api.iconify.design/tabler/file-text.svg?color=%23FFFFFF" width="16" />
+        <a href="#-documentação">Documentação</a>
+      </p>
+      <p>
+        <img src="https://api.iconify.design/tabler/palette.svg?color=%23FFFFFF" width="16" />
+        <a href="#-paleta-de-cores-do-projeto">Paleta de Cores do Projeto</a>
+      </p>
+      <p>
+        <img src="https://api.iconify.design/tabler/users.svg?color=%23FFFFFF" width="16" />
+        <a href="#-equipe">Equipe</a>
+      </p>
     </td>
   </tr>
 </table>
