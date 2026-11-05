@@ -48,8 +48,7 @@
       <br><br>
       <strong>FRONTEND</strong>
       <br>
-      <sub>Portal web · Vue.js</sub>
-      <br><br>
+      <br>
       <a href="https://github.com/CatDevss/FRONTEND-API-4">
         <img src="https://img.shields.io/badge/ACESSAR_FRONTEND-2D2D2D?style=for-the-badge&logo=github&logoColor=FFA300" alt="Acessar Frontend" />
       </a>
@@ -59,8 +58,7 @@
       <br><br>
       <strong>BACKEND</strong>
       <br>
-      <sub>API REST · Java & Spring Boot</sub>
-      <br><br>
+      <br>
       <a href="https://github.com/CatDevss/BACKEND-API-4">
         <img src="https://img.shields.io/badge/ACESSAR_BACKEND-2D2D2D?style=for-the-badge&logo=github&logoColor=FE5000" alt="Acessar Backend" />
       </a>
