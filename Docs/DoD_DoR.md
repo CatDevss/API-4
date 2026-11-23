@@ -18,11 +18,11 @@
 
 Uma User Story só entra em uma Sprint quando:
 
-- [ ] Está escrita no formato *Como [persona], quero [ação], para que [benefício]*, com critério de aceite claro
-- [ ] As regras de negócio e os dados necessários já foram definidos com o time
-- [ ] Foi estimada em conjunto pela equipe
-- [ ] Não possui dependência bloqueante pendente
-- [ ] Os itens específicos de DoR da User Story (tabela abaixo) foram confirmados e anotados no board, não só combinados verbalmente
+- [ ] Está escrita no formato *Como [persona], quero [ação], para que [benefício]*, descrevendo claramente o que o usuário vê e faz
+- [ ] Possui o desenho (protótipo) da tela mostrando os campos, botões, informações exibidas e mensagens de aviso ou erro
+- [ ] Todas as regras de funcionamento e condições de validação estão escritas de forma clara, sem dúvidas em aberto
+- [ ] Existem exemplos reais de arquivos, dados ou cenários de uso disponíveis para testar o fluxo completo
+- [ ] Os itens específicos de DoR da User Story (tabela abaixo) já estão preparados e anexados no card
 
 <br>
 
@@ -65,8 +65,9 @@ Uma User Story é considerada concluída quando:
       <p align="center">
         <img width="60" height="3" src="https://placehold.co/60x3/FE5000/FE5000.png"/><br><strong>DoR</strong>
       </p>
-      ➤ Campos obrigatórios da fonte definidos com o time (nome, URL de origem, usuário responsável)<br>
-      ➤ Confirmado que é o Gestor quem cadastra a fonte, não o Operador
+      ➤ Desenho da tela de cadastro pronto, mostrando os campos obrigatórios (nome, endereço/URL de origem, responsável), o botão de salvar e os avisos de erro<br>
+      ➤ Regras claras do que o sistema deve barrar ao salvar (campo vazio, endereço inválido ou fonte com nome já cadastrado)<br>
+      ➤ Regra de acesso definida deixando explícito que apenas o Gestor visualiza e usa essa tela, e o Operador não tem permissão
     </td>
     <td width="50%" valign="top">
       <p align="center">
@@ -94,11 +95,9 @@ Uma User Story é considerada concluída quando:
       <p align="center">
         <img width="60" height="3" src="https://placehold.co/60x3/FE5000/FE5000.png"/><br><strong>DoR</strong>
       </p>
-      ➤ US1 concluída (fonte precisa existir antes do conjunto)<br>
-      ➤ Campos obrigatórios do conjunto definidos com o time<br>
-      ➤ Lista fechada de formatos de arquivo aceitos definida (ex.: csv, json, geojson, shp, gpkg, tif)<br>
-      ➤ Decidido em qual camada — front ou back — a validação de formato acontece, e isso está anotado na task<br>
-      ➤ Limite máximo de tamanho de arquivo definido
+      ➤ Desenho da tela pronto mostrando a escolha de uma fonte já cadastrada, os dados do conjunto, a área de envio do arquivo e os avisos na tela (sucesso, formato inválido ou arquivo repetido)<br>
+      ➤ Lista fechada dos tipos de arquivo aceitos (csv, json, geojson, shp, gpkg, tif) e o tamanho máximo permitido por envio<br>
+      ➤ Exemplos de arquivos reais (válidos, com formato errado e repetidos) separados para testar o envio e o registro de data, hora e responsável
     </td>
     <td width="50%" valign="top">
       <p align="center">
@@ -128,10 +127,9 @@ Uma User Story é considerada concluída quando:
       <p align="center">
         <img width="60" height="3" src="https://placehold.co/60x3/FE5000/FE5000.png"/><br><strong>DoR</strong>
       </p>
-      ➤ US2 concluída<br>
-      ➤ Lista de campos obrigatórios, tipos e domínios definida por tipo de conjunto (mesmo que inicialmente fixa em código, não vinda de um dicionário no banco)<br>
-      ➤ Definido o que conta como registro duplicado e como geometria inválida<br>
-      ➤ Confirmado que a tabela de quarentena tem como localizar o registro de origem dentro do arquivo bruto (não precisa duplicar o conteúdo inteiro, mas precisa referenciar de volta)
+      ➤ Lista exata de todas as falhas que o sistema deve barrar em cada tipo de arquivo (campo vazio, dado fora do padrão, registro repetido e desenho de área/mapa inválido)<br>
+      ➤ Desenho da tela de itens com problema (quarentena) mostrando de qual arquivo cada erro veio, qual é a linha/registro e o motivo claro do problema<br>
+      ➤ Arquivos de exemplo contendo tanto dados corretos quanto erros propositais para comprovar a separação
     </td>
     <td width="50%" valign="top">
       <p align="center">
@@ -160,9 +158,9 @@ Uma User Story é considerada concluída quando:
       <p align="center">
         <img width="60" height="3" src="https://placehold.co/60x3/FE5000/FE5000.png"/><br><strong>DoR</strong>
       </p>
-      ➤ US3 concluída<br>
-      ➤ Regras de padronização definidas (ex.: projeção equivalente, geometrias dissolvidas)<br>
-      ➤ Biblioteca geoespacial (GDAL/GeoTools) avaliada e escolhida
+      ➤ Regras claras de como os dados validados devem ser ajustados para ficarem no mesmo formato (padrão de coordenadas geográficas, nomes de colunas e unificação de áreas sobrepostas)<br>
+      ➤ Regra definida sobre o que deve ser registrado em cada ajuste para que seja possível comparar o dado padronizado com o arquivo original intocado<br>
+      ➤ Arquivos de dados já validados disponíveis para testar toda a padronização
     </td>
     <td width="50%" valign="top">
       <p align="center">
@@ -191,8 +189,9 @@ Uma User Story é considerada concluída quando:
       <p align="center">
         <img width="60" height="3" src="https://placehold.co/60x3/FE5000/FE5000.png"/><br><strong>DoR</strong>
       </p>
-      ➤ US4 concluída<br>
-      ➤ Fórmula de cada um dos 7 indicadores (ICV, IRL, IAPP, ISAP, IAE, IDesmat, IFC) validada com o time
+      ➤ Regra de cálculo e unidade de medida de cada um dos 7 indicadores (ICV, IRL, IAPP, ISAP, IAE, IDesmat, IFC) descritas passo a passo, mostrando quais informações são cruzadas<br>
+      ➤ Exemplo de resultado esperado para uma propriedade e para um município (com valores já conferidos) para comparar e validar se o cálculo bate<br>
+      ➤ Dados padronizados e mapas de referência dos municípios disponíveis para realizar os cruzamentos
     </td>
     <td width="50%" valign="top">
       <p align="center">
@@ -221,8 +220,9 @@ Uma User Story é considerada concluída quando:
       <p align="center">
         <img width="60" height="3" src="https://placehold.co/60x3/FE5000/FE5000.png"/><br><strong>DoR</strong>
       </p>
-      ➤ Dados tratados e indicadores calculados disponíveis para avaliação<br>
-      ➤ Critérios que bloqueiam a aprovação de uma versão definidos com o time
+      ➤ Desenho da tela de avaliação pronto mostrando o resumo de qualidade (quantidade de dados aprovados e com erro), a prévia dos indicadores e o botão de aprovação<br>
+      ➤ Critérios exatos que impedem a aprovação de uma versão (ex.: limite máximo de erros aceitos ou indicadores faltando)<br>
+      ➤ Regra explícita de que, após aprovada, a versão fica travada para edição ou exclusão e exibe quem aprovou e quando
     </td>
     <td width="50%" valign="top">
       <p align="center">
@@ -251,7 +251,9 @@ Uma User Story é considerada concluída quando:
       <p align="center">
         <img width="60" height="3" src="https://placehold.co/60x3/FE5000/FE5000.png"/><br><strong>DoR</strong>
       </p>
-      ➤ US6 concluída
+      ➤ Desenho da tela de versões pronto mostrando claramente qual versão está marcada como atual (vigente) e a lista de versões anteriores disponíveis para consulta<br>
+      ➤ Regra de substituição definida: ao divulgar uma nova versão aprovada, ela assume como principal e a anterior vai automaticamente para o histórico<br>
+      ➤ Pelo menos duas versões aprovadas de exemplo disponíveis para testar a troca de vigência e a consulta ao histórico
     </td>
     <td width="50%" valign="top">
       <p align="center">
@@ -279,7 +281,9 @@ Uma User Story é considerada concluída quando:
       <p align="center">
         <img width="60" height="3" src="https://placehold.co/60x3/FE5000/FE5000.png"/><br><strong>DoR</strong>
       </p>
-      ➤ US7 concluída
+      ➤ Desenho da tela de consulta pronto mostrando os filtros (município, propriedade, versão), as três formas de visualização (mapa, tabela e gráfico) e o botão de download<br>
+      ➤ Formatos e informações que devem vir no arquivo baixado definidos com clareza<br>
+      ➤ Base de dados completa de teste carregada para verificar se a abertura das telas e filtros responde em até 3 segundos
     </td>
     <td width="50%" valign="top">
       <p align="center">
@@ -307,7 +311,8 @@ Uma User Story é considerada concluída quando:
       <p align="center">
         <img width="60" height="3" src="https://placehold.co/60x3/FE5000/FE5000.png"/><br><strong>DoR</strong>
       </p>
-      ➤ Definido exatamente quais eventos geram registro de auditoria (upload, validação, aprovação, publicação, download)
+      ➤ Lista fechada de todas as ações que geram registro (envio, validação, aprovação, publicação e download) e quais informações aparecem em cada linha (quem fez, o que fez, quando e em qual dado)<br>
+      ➤ Desenho da tela de histórico de auditoria pronto mostrando filtros por usuário, data e tipo de ação, sem opção de editar ou apagar nenhum registro
     </td>
     <td width="50%" valign="top">
       <p align="center">
@@ -335,8 +340,8 @@ Uma User Story é considerada concluída quando:
       <p align="center">
         <img width="60" height="3" src="https://placehold.co/60x3/FE5000/FE5000.png"/><br><strong>DoR</strong>
       </p>
-      ➤ Perfis de acesso e permissões de cada um definidos com o time (Administrador, Gestor, Operador, Analista, Auditor)<br>
-      ➤ Valores exatos aceitos no banco para cada tipo de perfil confirmados, batendo com o que o código vai gravar
+      ➤ Tabela de permissões fechada mostrando o que cada um dos 5 perfis (Administrador, Gestor, Operador, Analista, Auditor) pode ver, cadastrar, aprovar ou baixar<br>
+      ➤ Desenho da tela de cadastro de usuários pronto com campos de identificação, escolha do perfil e mensagem de acesso bloqueado quando alguém tentar entrar onde não tem permissão
     </td>
     <td width="50%" valign="top">
       <p align="center">
@@ -364,7 +369,8 @@ Uma User Story é considerada concluída quando:
       <p align="center">
         <img width="60" height="3" src="https://placehold.co/60x3/FE5000/FE5000.png"/><br><strong>DoR</strong>
       </p>
-      ➤ Definido o que é considerado indisponibilidade para cada componente (portal, API, GeoDataLake, Airflow)
+      ➤ Critérios claros do que caracteriza falha em cada parte do sistema (portal fora do ar, falha no envio/consulta de dados, armazenamento cheio ou erro no processamento automático)<br>
+      ➤ Desenho da tela de status pronto mostrando o indicador visual (funcionando ou com falha) de cada serviço e definição de quem recebe o aviso e por qual canal quando algo parar
     </td>
     <td width="50%" valign="top">
       <p align="center">
