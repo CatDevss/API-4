@@ -475,7 +475,7 @@ O que deve ser entregue ao final do semestre e como o MVP será considerado bem-
 | Estratégia de Branch e Pull Request | [Acessar](https://github.com/CatDevss/API-4/blob/main/Docs/Branch_Strategy.md) |
 | Padrão de Commits | [Acessar](https://github.com/CatDevss/API-4/blob/main/Docs/Padrao-de-Commits.md) |
 | Manual de Instalação | [Acessar](https://github.com/CatDevss/API-4/blob/main/Docs/manualInstalacao.md) |
-| Manual do Usuário | [Acessar](#) |
+| Manual do Usuário | [Acessar](https://github.com/CatDevss/API-4/blob/main/Docs/Manual_do_usu%C3%A1rio_GeoRural_DataHub.pdf) |
 | Critérios de Aceitação | [Acessar](https://github.com/CatDevss/API-4/blob/main/Docs/DoD_DoR.md) |
 
 </div>
