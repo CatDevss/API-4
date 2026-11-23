@@ -51,7 +51,7 @@ Uma User Story é considerada concluída quando:
 
 <br>
 
-<h3 align="center">▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄</h3>
+<h3 align="center">C</h3>
 
 <h3 align="center">US1 - Cadastro de fonte</h3>
 
@@ -81,7 +81,7 @@ Uma User Story é considerada concluída quando:
 
 <br>
 
-<h3 align="center">▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄</h3>
+<h3 align="center">▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄</h3>
 
 <h3 align="center">US2 - Criação de conjunto e envio dos arquivos de dados</h3>
 
@@ -113,7 +113,7 @@ Uma User Story é considerada concluída quando:
 
 <br>
 
-<h3 align="center">▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄</h3>
+<h3 align="center">▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄/h3>
 
 <h3 align="center">US3 - Verificação e separação de dados com problema</h3>
 
@@ -144,7 +144,7 @@ Uma User Story é considerada concluída quando:
 
 <br>
 
-<h3 align="center">▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄</h3>
+<h3 align="center">▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄</h3>
 
 <h3 align="center">US4 - Organização e padronização dos dados</h3>
 
@@ -175,7 +175,7 @@ Uma User Story é considerada concluída quando:
 
 <br>
 
-<h3 align="center">▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄</h3>
+<h3 align="center">▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄</h3>
 
 <h3 align="center">US5 - Cruzamento e cálculo dos indicadores</h3>
 
@@ -206,7 +206,7 @@ Uma User Story é considerada concluída quando:
 
 <br>
 
-<h3 align="center">▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄</h3>
+<h3 align="center">▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄</h3>
 
 <h3 align="center">US6 - Qualidade e versionamento imutável</h3>
 
@@ -237,7 +237,7 @@ Uma User Story é considerada concluída quando:
 
 <br>
 
-<h3 align="center">▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄</h3>
+<h3 align="center">▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄</h3>
 
 <h3 align="center">US7 - Divulgação das versões aprovadas</h3>
 
@@ -267,7 +267,7 @@ Uma User Story é considerada concluída quando:
 
 <br>
 
-<h3 align="center">▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄</h3>
+<h3 align="center">▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄</h3>
 
 <h3 align="center">US8 - Consumo dos indicadores divulgados</h3>
 
@@ -297,7 +297,7 @@ Uma User Story é considerada concluída quando:
 
 <br>
 
-<h3 align="center">▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄</h3>
+<h3 align="center">▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄</h3>
 
 <h3 align="center">US9 - Auditoria</h3>
 
@@ -326,7 +326,7 @@ Uma User Story é considerada concluída quando:
 
 <br>
 
-<h3 align="center">▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄</h3>
+<h3 align="center">▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄</h3>
 
 <h3 align="center">US10 - Gestão de perfis de acesso</h3>
 
@@ -355,7 +355,7 @@ Uma User Story é considerada concluída quando:
 
 <br>
 
-<h3 align="center">▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄</h3>
+<h3 align="center">▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄</h3>
 
 <h3 align="center">US11 - Monitoramento de infraestrutura</h3>
 
