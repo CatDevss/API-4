@@ -1,4 +1,4 @@
--- GEORURAL DATAHUB
+-- Cadastros iniciais do GeoRural DataHub.
 
 -- 1. USUARIOS
 
